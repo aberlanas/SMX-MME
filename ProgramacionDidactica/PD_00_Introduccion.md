@@ -10,5 +10,5 @@ keywords: [SMX, MME, Programacion Didáctica]
 
 \tableofcontents
 
-\newpage
+
 

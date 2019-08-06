@@ -41,8 +41,7 @@ diferentes cualificaciones profesionales en diferentes Familias Profesionales y
 en diferentes niveles de cualificación, teniendo en cuenta criterios de la Unión
 Europea.
 
-La cualificación profesional del Ciclo Formativo de
- Grado Medio : “Sistemas Microinformáticos y redes”, establecido por el Real
+La cualificación profesional del Ciclo Formativo de Grado Medio : *Sistemas Microinformáticos y redes*, establecido por el Real
 Decreto de Título 1691/2007 y por la Orden 29 de Julio de 2009 de la Conselleria de
 Educación Formación y Empleo de la Generalitat Valenciana se estructura en:
 
