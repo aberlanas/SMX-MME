@@ -25,7 +25,7 @@ PD_PATH="ProgramacionDidactica"
 #
 # UD : Nombres de las Unidades
 
-UD01_NAME="UD01_IntroduccionSistemasOperativos"
+UD01_NAME="Unidad01_IntroduccionCambioBase"
 UD02_NAME="UD02_Virtualizacion"
 UD03_NAME="UD03_Instalacion_Arranque"
 UD04_NAME="UD04_ProcesosYRed"
@@ -118,7 +118,10 @@ make_pd(){
     cd ${PD_PATH}
     pandoc --template ${TEMPLATE_TEX_PD} ${PANDOC_OPTIONS} -o ${PDF_PATH}/ProgramacionDidactica.pdf PD_*.md
     say_file ${PDF_PATH}/ProgramacionDidactica.pdf
-    
+    mkdir -p ${PDF_PATH}/PD/
+    mv ${PDF_PATH}/ProgramacionDidactica.pdf ${PDF_PATH}/PD/
+    say_ok "PDFS generados en : ${PDF_PATH}/PD/"
+
 }
 
 
@@ -130,7 +133,8 @@ make_pd(){
 make_UD01(){
 
     cd ${UD01_NAME}
-    make_teoria ${UD01_NAME}
+    
+    #make_teoria ${UD01_NAME}
     make_practicas ${UD01_NAME}
     
     cd ..
