@@ -194,6 +194,9 @@ $for(header-includes)$
 $header-includes$
 $endfor$
 
+
+
+
 $if(subparagraph)$
 $else$
 % Redefines (sub)paragraphs to behave more like sections
@@ -209,14 +212,14 @@ $endif$
 
 \begin{document}
 
-%$if(title)$
-%\maketitle
-%$endif$
-%$if(abstract)$
-%\begin{abstract}
-%$abstract$
-%\end{abstract}
-%$endif$
+$if(title)$
+\maketitle
+$endif$
+$if(abstract)$
+\begin{abstract}
+$abstract$
+\end{abstract}
+$endif$
 
 $for(include-before)$
 $include-before$
