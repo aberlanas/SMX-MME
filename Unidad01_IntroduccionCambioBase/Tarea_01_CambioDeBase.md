@@ -48,3 +48,51 @@ Pasa de binario a decimal:
 | 11111111 | |
 | 11110111 | |
 | 11101111 | |
+
+
+## Ejercicio 3
+
+Pasa de Base 10 a Base 8
+
+| Numero decimal |  Base 8 | 
+| -------------- | --------|
+|12 ||
+|9 ||
+|127 ||
+|128 ||
+|256 ||
+|244 ||
+|192 ||
+|168 ||
+|255 ||
+
+
+## Ejercicio 4
+
+Pasa de base 8 a base 10 (octal a decimal):
+
+| Base 8 | Base 10 (decimal)|
+| ------ | -----------------|
+|13 | |
+|17 | |
+|2334 | |
+|23177 | |
+
+## Ejercicio 5
+
+Pasa de base 16 a base 10 (Hexadecimal a decimal):
+
+| Base 16 |  Base 10 | 
+| --------|----------|
+| ABCD123 | |
+| 143AAAA | |
+| FFFFFFFF | |
+| FFBBCCDD | |
+| F12345 | |
+| B12345 | |
+| CAFE| |
+| FABADA| |
+| CADA | |
+| FADA | |
+| FEFEFE| | 
+
