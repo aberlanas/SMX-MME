@@ -4,7 +4,7 @@
 
 ## Temporalización
 
-14 Horas
+21 Horas
 
 ## Contenidos 
 
