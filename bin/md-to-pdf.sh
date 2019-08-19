@@ -26,17 +26,16 @@ PD_PATH="ProgramacionDidactica"
 # UD : Nombres de las Unidades
 
 UD01_NAME="Unidad01_IntroduccionCambioBase"
-UD02_NAME="UD02_Virtualizacion"
-UD03_NAME="UD03_Instalacion_Arranque"
-UD04_NAME="UD04_ProcesosYRed"
-UD05_NAME="UD05_UsuariosGruposYPermisos"
-UD06_NAME="UD06_SistemasDeFicheros"
-UD07_NAME="UD07_SoftwareYActualizaciones"
-UD08_NAME="UD08_Seguridad"
-UD09_NAME="UD09_AdministracionDelDominio"
-UD10_NAME="UD10_AccesoAlDominio"
-UD11_NAME="UD11_RendimientoYAuditorias"
-UD12_NAME="UD12_GestionDeIncidencias"
+UD02_NAME="Unidad02_Microprocesador"
+UD03_NAME="Unidad03_PlacaBase"
+UD04_NAME="Unidad04_RAM"
+UD05_NAME="Unidad05_DiscosDuros"
+UD06_NAME="Unidad06_TorresyFuentes"
+UD07_NAME="Unidad07_MedicionYMantenimiento"
+UD08_NAME="Unidad08_RAIDSyNAS"
+UD09_NAME="Unidad09_Perifericos"
+UD10_NAME="Unidad10_RiesgosLaborales"
+UD11_NAME="Unidad11_NuevasTendencias"
 
 #
 ## Unidades
@@ -145,13 +144,9 @@ make_UD01(){
 make_UD02(){
 
     cd ${UD02_NAME}
-    make_teoria ${UD02_NAME}
+    #make_teoria ${UD02_NAME}
     make_practicas ${UD02_NAME}
     cd ..
-  
-    # Guias del tema
-    make_guia_ubuntu_bionic
-    make_guia_xubuntu_bionic
 
     move_pdfs ${UD02_NAME}
 }
@@ -162,10 +157,7 @@ make_UD03()
     make_teoria ${UD03_NAME}
     make_practicas ${UD03_NAME}
     cd ..
-    
-    # Guias del tema
-    make_guia_windows_10
-    make_guia_windows_2019
+
 
     move_pdfs ${UD03_NAME}
 }
@@ -175,7 +167,6 @@ make_UD04()
     cd ${UD04_NAME}
     make_teoria ${UD04_NAME}
     make_practicas ${UD04_NAME}
-    #make_anexos ${UD04_NAME}
     cd ..
 
     move_pdfs ${UD04_NAME}
@@ -219,9 +210,6 @@ make_UD08(){
     
     cd ..
 
-    # Guias del tema
-    make_guia_omv 
-
     move_pdfs ${UD08_NAME}
 
 }
@@ -255,16 +243,6 @@ make_UD11(){
 
     move_pdfs ${UD11_NAME}
 }
-
-make_UD12(){
-    cd ${UD12_NAME}
-    make_teoria ${UD12_NAME}
-    make_practicas ${UD12_NAME}
-    cd ..
-
-    move_pdfs ${UD12_NAME}
-}
-
 
 #
 # MAIN
@@ -306,9 +284,6 @@ case $1 in
     "11")
         make_UD11
 	;;
-    "12")
-        make_UD12
-	;;
     "all")
         make_UD01
         make_UD02
@@ -321,10 +296,9 @@ case $1 in
         make_UD09
         make_UD10
         make_UD11
-        make_UD12
         ;;
     *)
-        echo "Tema desconocido"
+        echo "Unidad desconocido"
 		exit 1
 		;;
 esac    
