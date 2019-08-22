@@ -25,17 +25,21 @@ PD_PATH="ProgramacionDidactica"
 #
 # UD : Nombres de las Unidades
 
-UD01_NAME="Unidad01_IntroduccionCambioBase"
-UD02_NAME="Unidad02_Microprocesador"
-UD03_NAME="Unidad03_PlacaBase"
-UD04_NAME="Unidad04_RAM"
-UD05_NAME="Unidad05_DiscosDuros"
-UD06_NAME="Unidad06_TorresyFuentes"
-UD07_NAME="Unidad07_MedicionYMantenimiento"
-UD08_NAME="Unidad08_RAIDSyNAS"
-UD09_NAME="Unidad09_Perifericos"
-UD10_NAME="Unidad10_RiesgosLaborales"
+UD01_NAME="Unidad01_IntroduccionSistemaBinario"
+UD02_NAME="Unidad02_ProteccionAmbientalYHerramientas"
+UD03_NAME="Unidad03_ComponentesBasicos"
+UD04_NAME="Unidad04_PlacaBase"
+UD05_NAME="Unidad05_Microprocesadores"
+UD06_NAME="Unidad06_Memoria"
+UD07_NAME="Unidad07_AlmacenamientoExterno"
+UD08_NAME="Unidad08_Tarjetas"
+UD09_NAME="Unidad09_Ensamblaje"
+UD10_NAME="Unidad10_Perifericos"
 UD11_NAME="Unidad11_NuevasTendencias"
+UD12_NAME="Unidad12_Mantenimiento"
+UD13_NAME="Unidad13_Tecnicas"
+UD14_NAME="Unidad14_Particiones"
+UD15_NAME="Unidad15_UtilidadesBackups"
 
 #
 ## Unidades
@@ -244,6 +248,46 @@ make_UD11(){
     move_pdfs ${UD11_NAME}
 }
 
+make_UD12(){
+    cd ${UD12_NAME}
+    make_teoria ${UD12_NAME}
+    make_practicas ${UD12_NAME}
+    cd ..
+
+
+    move_pdfs ${UD12_NAME}
+}
+
+make_UD13(){
+    cd ${UD13_NAME}
+    make_teoria ${UD13_NAME}
+    make_practicas ${UD13_NAME}
+    cd ..
+
+
+    move_pdfs ${UD13_NAME}
+}
+
+make_UD14(){
+    cd ${UD14_NAME}
+    make_teoria ${UD14_NAME}
+    make_practicas ${UD14_NAME}
+    cd ..
+
+
+    move_pdfs ${UD14_NAME}
+}
+
+make_UD15(){
+    cd ${UD15_NAME}
+    make_teoria ${UD15_NAME}
+    make_practicas ${UD15_NAME}
+    cd ..
+
+    move_pdfs ${UD15_NAME}
+}
+
+
 #
 # MAIN
 
@@ -284,6 +328,18 @@ case $1 in
     "11")
         make_UD11
 	;;
+    "12")
+        make_UD12
+	;;
+    "13")
+        make_UD13
+	;;
+    "14")
+        make_UD14
+	;;
+    "15")
+        make_UD15
+	;;
     "all")
         make_UD01
         make_UD02
@@ -296,9 +352,13 @@ case $1 in
         make_UD09
         make_UD10
         make_UD11
+        make_UD12
+        make_UD13
+        make_UD14
+        make_UD15
         ;;
     *)
-        echo "Unidad desconocido"
+        echo "Unidad desconocida"
 		exit 1
 		;;
 esac    
