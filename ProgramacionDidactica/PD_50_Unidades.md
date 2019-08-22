@@ -13,3 +13,20 @@ La coordinación con el departamento y el equipo educativo también
 resulta beneficiosa, ya que podemos trabajar conceptos desde varios módulos,
 fomentando de esta manera su aprendizaje.
 
+## Listado de Unidades
+
+Unidad 01 : Introducción.
+Unidad 02 : Protección ambiental y herramientas.
+Unidad 03 : Componentes básicos.
+Unidad 04 : Placa base.
+Unidad 05 : Microprocesadores.
+Unidad 06 : Memoria.
+Unidad 07 : Almacenamiento Externo.
+Unidad 08 : Tarjetas.
+Unidad 09 : Ensamblaje de un ordenador.
+Unidad 10 : Periféricos.
+Unidad 11 : Nuevas tendencias.
+Unidad 12 : Mantenimiento.
+Unidad 13 : Técnicas y herramientas de diagnóstico.
+Unidad 14 : Particiones y Arranque.
+Unidad 15 : Utilidades de mantenimiento y Backups.

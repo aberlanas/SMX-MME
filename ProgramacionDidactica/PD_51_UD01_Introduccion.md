@@ -1,4 +1,5 @@
 \newpage
+
 # Unidad 01 : Introducción y Sistema Binario
 
 ## Temporalización
