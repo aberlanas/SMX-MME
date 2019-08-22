@@ -1,6 +1,6 @@
 \newpage
 
-# Unidad 03 : La Placa Base
+# Unidad 03 : Placa Base.
 
 ## Temporalización
 

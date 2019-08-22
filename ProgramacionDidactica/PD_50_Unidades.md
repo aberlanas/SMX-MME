@@ -15,7 +15,7 @@ fomentando de esta manera su aprendizaje.
 
 ## Listado de Unidades
 
-Unidad 01 : Introducción.
+Unidad 01 : Introducción y Sistema Binario.
 Unidad 02 : Protección ambiental y herramientas.
 Unidad 03 : Componentes básicos.
 Unidad 04 : Placa base.
