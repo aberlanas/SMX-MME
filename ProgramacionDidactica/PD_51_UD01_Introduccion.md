@@ -4,7 +4,7 @@
 
 ## Temporalización
 
-7 Horas
+7 Sesiones
 
 ## Contenidos 
 
@@ -13,13 +13,6 @@
 * Cambio de Base
 * Múltiplos
 * Puertas Lógicas y Operaciones
-
-## Actividades
-
-* Presentación las diferentes unidades del Sistema Binario.
-* Realizar operaciones básicas de transformación de binario a decimal y de decimal a binario.
-* Comparar los diferentes múltiplos del sistema binario.
-* Reconocer las diferentes puertás lógicas más comunes y sus operaciones.
 
 ## Criterios de Evaluación
 

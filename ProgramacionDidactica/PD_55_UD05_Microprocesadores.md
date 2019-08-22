@@ -4,7 +4,7 @@
 
 ## Temporalización
 
-21 Horas
+21 Sesiones
 
 ## Contenidos 
 
@@ -16,17 +16,6 @@
 * Alimentación.
 * Refrigeración.
 * Fabricantes y Modelos.
-
-## Actividades
-
-* Análisis del funcionamiento de la CPU.
-* Descripción de los componentes internos más importantes de una CPU.
-* Análisis de Arquitecturas y Prestaciones.
-* Comparativas entre microprocesadores.
-* Análisis de Zócalos.
-* Estudio de potencia consumida y VRM de la CPU.
-* Análisis de diferentes mecanismos de refrigeración.
-* Estudio de los fabricantes más importantes, sus ventajas e inconvenientes.
 
 ## Criterios de Evaluación 
 

@@ -4,13 +4,15 @@
 
 ## Temporalización
 
-14 Horas
+14 Sesiones
 
 ## Contenidos 
 
-
-## Actividades
-
+* Definición de placa base.
+* Funciones.
+* Tipos de placa base.
+* Componentes.
+* Configuración.
 
 
 ## Criterios de Evaluación 
@@ -25,8 +27,6 @@ de obtener los resultados de aprendizaje siguientes:
 | 01.e          | Se han descrito las características y utilidades más importantes de la configuración de la placa base. |
 | 01.f          | Se han evaluado tipos de chasis para la placa base y el resto de componentes.|
 | 02.d | Se han ensamblado diferentes conjuntos de placa base, microprocesador y elementos de refrigeración en diferentes modelos de chasis, según las especificaciones dadas.|
-
-
 
 
 
