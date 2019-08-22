@@ -154,8 +154,8 @@ se presentan y estos contenidos.
 * Periféricos Multimedia.
 * Videoproyectores. Fijación y Conexión.
 * Sistemas de Audio.
-* Perifericos para la adquisición de imágenes fijas y en movimiento.
-* Perifericos para la impresión profesional.
+* Periféricos para la adquisición de imágenes fijas y en movimiento.
+* Periféricos para la impresión profesional.
 
 ---
 

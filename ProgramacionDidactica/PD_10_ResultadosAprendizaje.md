@@ -19,7 +19,7 @@ Selecciona los componentes de integración de un equipo microinformático están
 
 | Identificador | Criterio  |
 | -: |-----------|
-| 01.a          | Se han descrito los bloques que componen un equipo microinformático y sus funciones.|                   
+| 01.a          | Se han descrito los bloques que componen un equipo microinformático y sus funciones.|                 
 | 01.b          | Se ha reconocido la arquitectura de buses.|
 | 01.c          | Se han descrito las características de los tipos de microprocesadores (frecuencia, tensiones, potencia,zócalos, entre otros). |
 | 01.d          | Se ha descrito la función de los disipadores y ventiladores.|
