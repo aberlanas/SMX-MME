@@ -108,6 +108,7 @@ move_pdfs(){
     UDNAME=$1
 
     mkdir -p PDFS/${UDNAME}
+    rm -rf PDFS/${UDNAME}/*
     mv PDFS/*.pdf PDFS/${UDNAME}/
 
     say_ok "PDFS generados en : PDFS/${UDNAME}/"
@@ -119,10 +120,12 @@ move_pdfs(){
 
 make_pd(){
     cd ${PD_PATH}
-    pandoc --template ${TEMPLATE_TEX_PD} ${PANDOC_OPTIONS} -o ${PDF_PATH}/ProgramacionDidactica.pdf PD_*.md
-    say_file ${PDF_PATH}/ProgramacionDidactica.pdf
+    pandoc --template ${TEMPLATE_TEX_PD} ${PANDOC_OPTIONS} -o ${PDF_PATH}/ProgramacionDidacticaMME.pdf PD_*.md
+    pandoc -o ${PDF_PATH}/ProgramacionDidacticaMME.odt PD_*.md
+
+    say_file ${PDF_PATH}/ProgramacionDidacticaMME.pdf
     mkdir -p ${PDF_PATH}/PD/
-    mv ${PDF_PATH}/ProgramacionDidactica.pdf ${PDF_PATH}/PD/
+    mv ${PDF_PATH}/ProgramacionDidacticaMME.pdf ${PDF_PATH}/PD/
     say_ok "PDFS generados en : ${PDF_PATH}/PD/"
 
 }
