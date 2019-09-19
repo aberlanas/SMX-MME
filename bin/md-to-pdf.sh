@@ -151,7 +151,7 @@ make_UD01(){
 make_UD02(){
 
     cd ${UD02_NAME}
-    #make_teoria ${UD02_NAME}
+    make_teoria ${UD02_NAME}
     make_practicas ${UD02_NAME}
     cd ..
 
