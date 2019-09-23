@@ -6,7 +6,7 @@ lang: es-ES
 keywords: [SMX, MME]
 ---
 
-# Tarea : Precauciones
+# Exámen UD01 y UD02
 
 ### Ejercicios
 
@@ -16,29 +16,20 @@ de la clase la nota final del ejercicio es un 0.
 
 #### Ejercicio 01
 
-Enuncia las herramientas que son própias de utilización en un taller de ordenadores que se han descrito en esta unidad. Puedes añadir aquellas que consideres que deberían estar y que no han sido tratadas).
+¿Qué función cumple un condensador?¿Está relacionado con la electricidad estática?
 
 #### Ejercicio 02 
 
-Enumera y define brevemente los factores de riesgo en la instalación de componentes de un ordenador.
+¿Qué es un destornillador Phillips?¿Y uno Torx?¿Qué indica el número de la numeración de los TorX (por ejemplo **Tor15**)?
 
 #### Ejercicio 03
 
-¿Qué es la Electricidad Estática?¿Qué puede suceder cuando se produce una descarga electrostática sobre un componente electrónico?
+¿Qué es la fatiga visual?¿Qué podemos hacer para evitarla?
 
 #### Ejercicio 04
 
-Define brevemente los riesgos eléctricos.
+Entra en amazon y compra las 5 herramientas que consideres imprescindibles para realizar tu trabajo de mantenimiento.
+Razon cada elección con 40 palabras mínimo.
 
-#### Ejercicio 05
-
-Busca en PCComponentes 10 herramientas de trabajo que tengan la certificación europea.
-
-Busca en AliExpress 10 herramientas de trabajo que NO TENGAN la certificación europea.
-
-Compara Precios y prestaciones.
-
-Realizalo en una tabla indicando:
-
-| Nombre Componente | URL PCComponentes | URL AliExpress | Precio PCComponentes | Precio AliExpress |
-| ----------------- | ------------------| -------------- | ---------------------| ----------------- |
+| Nombre Herramienta | URL Amazon        | Razonamiento   |
+| ------------------ | ------------------| -------------- |
