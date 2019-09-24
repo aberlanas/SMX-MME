@@ -1,0 +1,106 @@
+// question: 453665  name: Examen_01_02PuertasLogicas_01
+::Ex_PuertasLogicas_01::[html]<p>La puerta lógica que realiza una operación de "o" exclusiva es....<br></p>{
+	=<p>XOR<br></p>
+	~<p>NAND<br></p>
+	~<p>AND<br></p>
+	~<p>OR<br></p>
+	~<p>NOT<br></p>
+}
+
+
+// question: 453666  name: Examen_01_02PuertasLogicas_02
+::Ex_PuertasLogicas_02::[html]<p>Los 14nm son el predecesor de: <br></p>{
+	=<p>Los 10nm<br></p>
+	~<p>Los 7nm <br></p>
+	~<p>Los 13nm<br></p>
+	~<p>Ninguna es cierta<br></p>
+	~Todas son ciertas<br>
+}
+
+
+// question: 453667  name: Examen_01_02UNICODE_01
+::Ex_UNICODE_01::[html]<p>¿Cuantos carácteres podemos representar con 8 bits?<br></p>{
+	=<p>256<br></p>
+	~<p>128<br></p>
+	~<p>8<br></p>
+	~<p>Ninguna es cierta<br></p>
+	~Todas son ciertas<br>
+}
+
+
+// question: 453668  name: Examen_01_02UNICODE_02
+::Ex_UNICODE_02::[html]<p>El UNICODE es un estándar de codificación de caracteres diseñado para facilitar el\n    tratamiento informático, transmisión y visualización de textos de numerosos idiomas y disciplinas técnicas, además de textos clásicos de lenguas muertas.</p><p>¿Cuál de los siguientes carácteres está en UNICODE<br></p>{
+	~<p>ñ<br></p>
+	~<p>o<br></p>
+	~<p>^<br></p>
+	~<p>)<br></p>
+	=Todas son ciertas<br>
+}
+
+
+// question: 453659  name: Examen_01_02BinarioDecimal_01
+::Ex_BinarioDecimal_01::[html]<p>¿Qué resultado da en decimal el número en binario \: 100110?<br></p>{#
+	=%100%38:0#
+	=%0%42:0#
+	=%0%66:0#
+}
+
+
+// question: 453660  name: Examen_01_02BinarioDecimal_02
+::Ex_BinarioDecimal_02::[html]<p>¿Qué resultado da en decimal el número en binario \: 11111110?<br></p>{#
+	=%100%254:0#
+	=%0%255:0#
+	=%0%256:0#
+}
+
+
+// question: 453661  name: Examen_01_02BinarioDecimal_03
+::Ex_BinarioDecimal_03::[html]<p>¿Qué resultado da en decimal el número en binario \: 11000000?<br></p>{#
+	=%100%192:0#
+	=%0%168:0#
+	=%0%182:0#
+}
+
+
+// question: 453662  name: Examen_01_02BinarioDecimal_04
+::Ex_BinarioDecimal_04::[html]<p>¿Qué resultado da en decimal el número en binario \: 10100000?<br></p>{#
+	=%100%160:0#
+	=%0%123:0#
+	=%0%148:0#
+}
+
+
+// question: 453663  name: Examen_01_02HexadecimalDecimal_01
+::Ex_HexadecimalDecimal_01::[html]<p>¿Qué resultado da en decimal el número en hexadecimal \: \#100?<br></p>{#
+	=%256%0:0#
+	=%0%100:0#
+	=%0%16000:0#
+}
+
+
+// question: 453664  name: Examen_01_02HexadecimalDecimal_02
+::Ex_HexadecimalDecimal_02::[html]<p>¿Qué resultado da en decimal el número en hexadecimal \: \#10?<br></p>{#
+	=%100%16:0#
+	=%0%2:0#
+	=%0%10:0#
+}
+
+// question: 453665  name: Examen_01_02_UD02_01
+::Ex_Prevencion_01::[html]<p>La potencia eléctica dentro de los equipos informáticos puede dañar a algun componente, pero nunca a nosotros.<br></p>{
+	=<p>Falso, existen componentes que si necesitan una potencia mayor<br></p>
+	~<p>Falso, siempre puede dañarnos.<br></p>
+	~<p>Falso, el amperaje es lo suficientemente alto como para causar lesiones<br></p>
+	~<p>Verdadero, sin contar la impresora.<br></p>
+	~<p>Verdadero.<br></p>
+}
+
+// question: 453665  name: Examen_01_02_UD02_02
+::Ex_Prevencion_02::[html]<p>Las fuentes pierden su voltaje al desconectarlas.<br></p>{
+	=<p>Falso, hay que esperar unos momentos<br></p>
+	~<p>Falso, debemos descargarlas con una toma de tierra<br></p>
+	~<p>Verdadero.<br></p>
+}
+
+
+
+
