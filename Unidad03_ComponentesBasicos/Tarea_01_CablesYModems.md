@@ -6,7 +6,7 @@ lang: es-ES
 keywords: [SMX, MME]
 ---
 
-# Tarea : Características de Cables
+# Tarea : Cables, Modems y un poco de Inglés
 
 ## Indicaciones
 
@@ -32,6 +32,6 @@ Lee el enlace siguiente : [HDMI](https://www.xataka.com/basics/tipos-de-cables-h
 
 ### Ejercicio 04
 
-Lee el enlace siguiente : [PicoBox](https://www.tomshardware.com/news/picobox-tiny-psu,40425.html)
+Lee el enlace siguiente : [PicoBox](https://www.tomshardware.com/news/picobox-tiny-psu,40425.html). 
 Resume con tus palabras el contenido del artículo. ¿Lo usarías en tu PC de casa?.
 
