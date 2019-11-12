@@ -6,7 +6,7 @@ lang: es-ES
 keywords: [SMX, MME]
 ---
 
-# Tarea : CPU vs GPU
+# Tarea : Ryzen vs CoffeLake
 
 ## Indicaciones
 
@@ -15,7 +15,7 @@ Responde con *TUS PROPIAS PALABRAS*. En caso de que un documento sea una copia d
 de la clase la nota final del ejercicio es un 0.
 
 Visiona el vídeo siguiente:
-[ HardwareSfera ](https://www.youtube.com/watch?v=TFWSL9XlgdM)
+[ Nate Gentile](https://www.youtube.com/watch?v=TFWSL9XlgdM)
 
 Contesta a las preguntas:
 
