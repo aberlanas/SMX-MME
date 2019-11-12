@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nb}{Get\PYGZhy{}WmiObject} \PYG{n}{win32\PYGZus{}physicalmemory} \PYG{p}{|}
+   \PYG{n+nb}{Format\PYGZhy{}Table} \PYG{n}{Manufacturer}\PYG{p}{,}\PYG{n}{Banklabel}\PYG{p}{,}\PYG{n}{Configuredclockspeed}\PYG{p}{,}\PYG{n}{Devicelocator}\PYG{p}{,}\PYG{n}{Capacity}\PYG{p}{,}\PYG{n}{Serialnumber} \PYG{n}{\PYGZhy{}autosize}
+\end{Verbatim}
