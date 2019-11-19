@@ -1,0 +1,105 @@
+% Created 2019-11-19 mar 18:19
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\usepackage[newfloat]{minted}
+\hypersetup{colorlinks=true,linkcolor=black}
+\author{Angel Berlanas}
+\date{\today}
+\title{UD07 - Discos Duros - Magnéticos}
+\hypersetup{
+ pdfauthor={Angel Berlanas},
+ pdftitle={UD07 - Discos Duros - Magnéticos},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 25.2.2 (Org mode 9.2.5)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+
+
+\section{Funcionamiento}
+\label{sec:org798a161}
+
+El disco es en realidad una pila de discos llamados platos que almacenan la informa-
+ción magnéticamente. Los diferentes platos que forman el disco giran a una velocidad
+constante y no cesan mientras el ordenador está encendido. Cada cara del plato tiene
+asignado uno de los cabezales de lectura/escritura.
+
+Las acciones que ejecuta el disco duro en una operación de lectura son:
+
+\begin{enumerate}
+\item Desplazar los cabezales de lectura/escritura hasta el lugar donde empiezan los datos.
+\item Esperar a que el primer dato llegue donde están los cabezales.
+\item Leer el dato con el cabezal.
+\end{enumerate}
+
+La operación de escritura es similar. El funcionamiento teórico es sencillo, pero en la
+realidad es mucho más complejo, ya que entran en juego el procesador, la controladora
+de discos, la BIOS/EFI, el sistema operativo, la memoria RAM y el propio disco,
+con la caché, etc.
+
+\section{Cabezas, cilindros y sectores}
+\label{sec:org9a712f6}
+
+Para organizar los datos en un disco duro se utilizan tres parámetros, que definen la
+estructura física del disco: \emph{cabeza, cilindro y sector}.
+
+\subsection{Cabezas}
+\label{sec:orge0d26dd}
+
+Cada una de las caras o cabezas del disco se divide en anillos concéntricos denominados pistas (tracks), que es donde se graban los datos.
+
+\subsection{Cilindro (cylinder).}
+\label{sec:org60e2508}
+
+Formados por todas las pistas accesibles en una posición de los cabezales. Se
+utiliza este término para referirse a la misma pista de todos los discos de la pila.
+
+\subsection{Sectores}
+\label{sec:org537f0b5}
+
+Cada pista se encuentra dividida en tramos o arcos iguales que permiten la grabación
+de bloques de bytes (normalmente, 512 B). Cada uno de estos tramos se llama sector. Los sectores
+son las unidades mínimas de información que pueden leerse o escribirse en el disco duro.
+
+\section{Estructura lógica}
+\label{sec:org2fc95ce}
+
+La estructura lógica de un disco duro es la forma en la que se organiza la información
+que contiene. Está formada por:
+
+\subsection{El sector de arranque (master boot record)}
+\label{sec:orgac4bb00}
+
+Es el primer sector de todo el disco duro: cabeza 0, cilindro 0 y
+sector 1. En él se almacena la tabla de particiones, que contiene información acerca del inicio y el fin de cada partición, y un pequeño programa
+llamado master boot, que es el encargado de leer la tabla de particiones y ceder el
+control al sector de arranque de la partición activa, desde la que arranca el PC.
+
+\subsection{El espacio particionado}
+\label{sec:org6b7cc9a}
+
+   Es el espacio de disco duro que ha sido asignado a alguna partición. Las particiones se definen por cilindros. Cada partición tiene un nombre; en
+los sistemas Microsoft llevan asociada una letra: C, D, E, etc.
+
+\subsection{El espacio sin particionar}
+\label{sec:orgeed30f4}
+
+Es el espacio que no se ha asignado a ninguna partición.
+\end{document}
