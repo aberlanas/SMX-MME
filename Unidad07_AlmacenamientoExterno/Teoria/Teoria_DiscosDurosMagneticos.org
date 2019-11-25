@@ -1,0 +1,65 @@
+#+TITLE: UD07 - Discos Duros - Magnéticos
+#+AUTHOR: Angel Berlanas
+#+latex_header: \hypersetup{colorlinks=true,linkcolor=black}
+
+
+* Funcionamiento
+
+El disco es en realidad una pila de discos llamados platos que almacenan la información. Los diferentes platos que forman el disco giran a una velocidad
+constante y no cesan mientras el ordenador está encendido. Cada cara del plato tiene
+asignado uno de los cabezales de lectura/escritura.
+
+Las acciones que ejecuta el disco duro en una operación de lectura son:
+
+ 1. Desplazar los cabezales de lectura/escritura hasta el lugar donde empiezan los datos.
+ 2. Esperar a que el primer dato llegue donde están los cabezales.
+ 3. Leer el dato con el cabezal.
+
+La operación de escritura es similar. El funcionamiento teórico es sencillo, pero en la
+realidad es mucho más complejo, ya que entran en juego el procesador, la controladora
+de discos, la BIOS/EFI, el sistema operativo, la memoria RAM y el propio disco,
+con la caché, etc.
+
+* Cabezas, cilindros y sectores
+
+Para organizar los datos en un disco duro se utilizan tres parámetros, que definen la
+estructura física del disco: /cabeza, cilindro y sector/.
+
+** Cabezas 
+
+   Cada una de las caras o cabezas del disco se divide en anillos concéntricos denominados pistas (tracks), que es donde se graban los datos.
+
+** Cilindro (cylinder). 
+
+   Formados por todas las pistas accesibles en una posición de los cabezales. Se
+   utiliza este término para referirse a la misma pista de todos los discos de la pila.
+
+** Sectores 
+
+   Cada pista se encuentra dividida en tramos o arcos iguales que permiten la grabación
+   de bloques de bytes (normalmente, 512 B). Cada uno de estos tramos se llama sector. Los sectores
+   son las unidades mínimas de información que pueden leerse o escribirse en el disco duro.
+
+* Estructura lógica
+
+La estructura lógica de un disco duro es la forma en la que se organiza la información
+que contiene. Está formada por:
+
+** El sector de arranque (master boot record)
+
+   Es el primer sector de todo el disco duro: cabeza 0, cilindro 0 y
+   sector 1. En él se almacena la tabla de particiones, que contiene información acerca del inicio y el fin de cada partición, y un pequeño programa
+   llamado master boot, que es el encargado de leer la tabla de particiones y ceder el
+   control al sector de arranque de la partición activa, desde la que arranca el PC.
+
+** El espacio particionado 
+
+   Es el espacio de disco duro que ha sido asignado a alguna partición. Las particiones se definen por cilindros. Cada partición tiene un nombre; en
+los sistemas Microsoft llevan asociada una letra: C, D, E, etc.
+
+** El espacio sin particionar 
+
+   Es el espacio que no se ha asignado a ninguna partición.
+
+
+
