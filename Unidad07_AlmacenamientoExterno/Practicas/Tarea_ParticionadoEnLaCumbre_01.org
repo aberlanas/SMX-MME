@@ -1,0 +1,65 @@
+#+TITLE: UD07 - Particionando en la Cumbre del Clima
+#+AUTHOR: Angel Berlanas
+#+latex_header: \hypersetup{colorlinks=true,linkcolor=black}
+
+* Descripción
+
+En la cumbre del clima que se celebra en Madrid se necesitan una serie de
+usuarios y de discos duros para el almacenamiento de los datos de las
+conferencias.
+
+La empresa adjudicataria hemos sido nosotros y debemos asegurarnos de que los
+datos se almacenan en cada uno de los usuarios correctamente, ya que existen una
+serie de /backups/ que deben hacerse al acabar el dia.
+
+* Usuarios
+
+En la máquina de Xubuntu que debemos que se llamará *Clima* instalar añadimos los siguientes usuarios.
+
+| Nombre      | Login       | Password    | Home                         | Adminstrador |
+| Cientificos | cientificos | 100tificos  | /home/cientificos            | SI           |
+| Periodistas | periodistas | p3r10d1st4s | /cumbre/publico/periodistas  | -            |
+| Politicos   | politicos   | p0l1t1c0s   | /cumbre/asistentes/politicos | -            |
+
+No crear las carpetas personales de los usuarios hasta que no se hayan añadido
+los discos duros y esté particionados y con los sistemas de ficheros que se
+muestran a continuación.
+
+* Discos
+
+Crear en el VirtualBox 2 discos de /2 Gigas/ cada uno con los siguientes nombres
+y particiones.
+
+| Nombre de Disco en el Anfitrión | Dispositivo |
+| clima.vdi                       | /dev/sdb    |
+| publico.vdi                     | /dev/sdc    |
+
+Particiones
+
+| Dispositivo | Partición | Tipo | Punto de Montaje   |
+| /dev/sdb    | /dev/sdb1 | ext4 | /cumbre/publico    |
+| /dev/sdc    | /dev/sdc1 | ext4 | /cumbre/asistentes |
+
+Una vez realizado esto, modificar el perfil de los usuarios /Periodistas/ y
+/Políticos/ para que su carpeta personal sea la que se ha mostrado en la tabla
+anterior.
+
+* Entrega
+
+El fichero /:/
+
+#+BEGIN_SRC bash
+/etc/fstab
+#+END_SRC
+
+De la máquina Xubuntu cuando tengais todos los puntos de montaje listos.
+
+Además, se pide la salida del comando 
+
+#+BEGIN_SRC bash
+cat /etc/passwd
+#+END_SRC
+
+Y por supuesto tres capturas de inicio de sesión /gráfica/ de los tres usuarios,
+mostrando que su carpeta personal se haya donde se ha establecido.
+
