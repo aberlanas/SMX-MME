@@ -1,0 +1,244 @@
+% Created 2019-12-08 dom 10:03
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\tolerance=1000
+\usepackage[newfloat]{minted}
+\hypersetup{colorlinks=true,linkcolor=black}
+\author{Angel Berlanas}
+\date{\today}
+\title{UD 07 - Exámen}
+\hypersetup{
+  pdfkeywords={},
+  pdfsubject={},
+  pdfcreator={Emacs 25.2.2 (Org mode 8.2.10)}}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+
+\section{Instrucciones}
+\label{sec-1}
+
+\begin{itemize}
+\item Leer \emph{todo} el exámen hasta el final antes de comenzar a realizar las
+acciones.
+\item Vais a necesitar la ISO de Xubuntu 19.10 que tenéis disponible en el
+Servidor del aula : \emph{172.29.0.254}.
+\item No se aceptará otro Sistema Operativo.
+\item La instalación ha de ser nueva, \textbf{no podéis} utilizar las antiguas.
+\item Mientras se instala podéis ir preparando los comandos y el documento que
+entregaréis al final del exámen.
+\item \emph{¡MUCHA SUERTE A TOD@S!}.
+\end{itemize}
+
+\section{Descripición}
+\label{sec-2}
+
+La empresa \emph{Soluciones Eficaces Altamente Inestables} nos acaba de contratar,
+un nuevo cliente les ha pedido una maqueta de Sistema Operativo para un
+estudio de grabación un tanto especial, donde acuden \emph{Youtubers} ,
+\emph{Compositores} y \emph{Músicos} de todas las épocas a trabajar (he dicho que era
+\emph{un tanto especial}).
+
+Debemos preparar un SO con las necesidades cubiertas para que ellos puedan
+probar que nuestra solución les sirve, si les sirve, nos contratarán y
+ganaremos un sueldo \emph{Nescafé} para toda la vida.
+
+Además de la instalación, debemos prepararles un pequeño resumen de los
+diferentes Discos Duros y de las características que tienen los sistemas de
+ficheros FAT32 que los hacen "\emph{tan especiales}".
+
+\section{Instalación}
+\label{sec-3}
+
+Debemos instalar una MV con Xubuntu con las siguientes características:
+
+\begin{itemize}
+\item 2 CPUs.
+\item 2 GB de RAM.
+\item 1 Disco Duro de 10GB dinámico.
+\item 1 Tarjeta de red en modo \textbf{puente}.
+\item En el controlador SATA la \emph{Caché del Anfitrión} ha de estar habilitada.
+\end{itemize}
+
+Una vez instalada, instalar el comando \verb~tree~ que nos hará falta para la
+entrega, mediante la orden:
+
+\verb~sudo apt install tree~
+
+
+\section{Usuarios}
+\label{sec-4}
+
+\textbf{Nota: Hasta 3 puntos}
+
+Los usuarios que \emph{finalmente} han de estar configurados en el equipo son los
+siguientes (y \textbf{solo} los siguientes), se adjunta tabla con las diferentes
+caracterísitcas el usuario:
+
+\begin{center}
+\begin{tabular}{lllll}
+Usuario & Login & Password & Administrador & Carpeta Personal\\
+\hline
+Armonia & armonia & 4rm0n14 & Si & /home/armonia\\
+Jaime & jaltozano & Y0utub3 & No & /youtubers/altozano\\
+Luis Angel & debenito & S1gn1f1c4d0 & Si & /musicos/analisis/debenito\\
+Anton & bruckner & 0rg4n1st4 & No & /musicos/compositores/bruckner\\
+Igor & stravinsky & F1r3b1rd & No & /musicos/compositores/stravinsky\\
+Philip & glass & M1n1m4l1st4 & Si & /musicos/pianistas/glass\\
+Toshiko & akiyoshi & J4p4nJ4zz & No & /musicos/pianistas/akiyoshi\\
+\end{tabular}
+\end{center}
+
+Además existen una serie de grupos \emph{adicionales} cuyos integrantes son los
+siguientes:
+
+\begin{center}
+\begin{tabular}{lllll}
+Usuario/ Grupos & analistas & compositores & musicos & youtubers\\
+\hline
+Armonia & x & x & x & x\\
+Jaime & x &  &  & x\\
+Luis Angel & x &  & x & \\
+Anton &  & x & x & \\
+Igor &  & x &  & \\
+Philip &  & x & x & \\
+Toshiko &  & x & x & \\
+\hline
+\end{tabular}
+\end{center}
+
+Estos grupos se utilizarán para otorgarles permisos de escritura y lectura a
+diferentes carpetas que se encontrarán en diferentes particiones tal y como se
+muestra en el siguiente apartado.
+
+\section{Discos Duros y Puntos de Montaje}
+\label{sec-5}
+
+\textbf{Nota: Hasta 3 puntos}
+
+Se añadirán a la máquina virtual los siguientes discos:
+
+\begin{center}
+\begin{tabular}{lll}
+Disco & Tamaño & Dispositvo\\
+\hline
+Musicos.vdi & 6GB & /dev/sdb\\
+Youtubers.vdi & 2GB & /dev/sdc\\
+Compartido.vdi & 2GB & /dev/sdd\\
+\end{tabular}
+\end{center}
+
+Una vez añadidos se crearán las siguientes particiones y se establecerán los
+siguientes puntos de montaje:
+
+\begin{center}
+\begin{tabular}{llll}
+Partición & Tamaño & Sistema de Ficheros & Punto de Montaje\\
+\hline
+/dev/sdb1 & 1GB & ext3 & /musicos/analisis\\
+/dev/sdb2 & 2GB & ext4 & /musicos/compositores\\
+/dev/sdb3 & 3GB & ext4 & /musicos/pianistas\\
+/dev/sdc1 & 2GB & btrfs & /youtubers\\
+/dev/sdd1 & 2GB & ext4 & /compartido\\
+\end{tabular}
+\end{center}
+
+\section{Permisos de compartido.}
+\label{sec-6}
+
+\textbf{Nota: Hasta 2 puntos}
+
+En la carpeta \verb~compartido~ debe haber una carpeta por cada uno de los \emph{grupos
+adicionales} y debemos permitir a los usuarios pertenecientes a dichos grupos
+escribir y leer dentro, impidiendo \emph{cualquier otro acceso} a los usuarios que
+\textbf{no sean} de ese grupo, excepto al usuario \emph{armonia} que debe poder realizar
+cualquier acción en \textbf{todos} los ficheros y carpetas de \verb~compartido~.
+
+\section{Pruebas}
+\label{sec-7}
+
+\textbf{Nota: Hasta 2 puntos}
+
+Se deben realizar las siguientes comprobaciones:
+
+\begin{itemize}
+\item Todos los usuarios pueden iniciar sesión gráfica.
+\item Todos los usuarios tienen el \verb~$HOME~ bien establecido.
+\item Los permisos son los correctos.
+\item Los puntos de montaje son los correctos y se montan en el arranque.
+\item Mediante el uso de los comando \verb~touch~ y \verb~cat~ ir pasando por todos los usuarios y
+realizando pruebas de creación y lectura de permisos en los diferentes
+ficheros y carpetas de \verb~compartido~.
+\end{itemize}
+
+
+\section{Petición especial}
+\label{sec-8}
+
+\textbf{Nota: Hasta 2 puntos}
+
+La tarea de formatear discos es algo muy importante y que debemos realizar con
+muchísima atención, sin embargo muchas veces veremos que resulta una tarea
+tediosa si lo tenemos que hacer en centenares de discos la misma
+operación. 
+
+Hemos consultado con el \emph{Oráculo} y nos ha dicho que existe \emph{al menos 1}
+script que formatea las particiones de un dispositivo dado.
+
+El \emph{script} es este:
+
+\begin{minted}[]{bash}
+#!/bin/bash
+(
+echo o # Create a new empty DOS partition table
+echo n # Add a new partition
+echo p # Primary partition
+echo 1 # Partition number
+echo   # First sector (Accept default: 1)
+echo   # Last sector (Accept default: varies)
+echo w # Write changes
+) | sudo fdisk /dev/sdX
+
+exit 0
+\end{minted}
+
+Se piden dos tareas:
+
+\begin{itemize}
+\item Explicar \emph{qué hace} este script, es decir \emph{cómo funciona}.
+\item Modificarlo para que adapte a tus necesidades en el formateo del disco : \emph{Compartido.vdi}.
+\end{itemize}
+
+
+\section{Entrega}
+\label{sec-9}
+
+Debéis presentar en un documento PDF los siguientes \emph{items}.
+
+\begin{itemize}
+\item El contenido del fichero \verb~/etc/fstab~ de la MV.
+\item La salida del comando \verb~mount~ en la MV.
+\item La salida del comando \verb~cat /etc/passwd~ en la MV.
+\item La salida del comando \verb~tree -pugf /compartido~ en la MV.
+\item Una captura de la sesión de \emph{cada uno de los usuarios} donde se muestre que
+la carpeta personal es la que está establecida en la \emph{tabla} del exámen y no
+\verb~/home/usuario~ (excepto para el usuario \verb~armonia~).
+\end{itemize}
+% Emacs 25.2.2 (Org mode 8.2.10)
+\end{document}
