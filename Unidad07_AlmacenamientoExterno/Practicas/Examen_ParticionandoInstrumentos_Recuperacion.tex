@@ -1,0 +1,207 @@
+% Created 2019-12-16 lun 20:47
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\usepackage[newfloat]{minted}
+\hypersetup{colorlinks=true,linkcolor=black}
+\author{Angel Berlanas}
+\date{\today}
+\title{UD 07 - Exámen (Recuperación)}
+\hypersetup{
+ pdfauthor={Angel Berlanas},
+ pdftitle={UD 07 - Exámen (Recuperación)},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 26.1 (Org mode 9.1.9)}, 
+ pdflang={Spanish}}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+
+\section{Instrucciones}
+\label{sec:org4b4eb24}
+
+\begin{itemize}
+\item Leer \emph{todo} el exámen \emph{de recuperación} hasta el final antes de comenzar a realizar las
+acciones.
+\item Vais a necesitar la ISO de Xubuntu 19.10 que tenéis disponible en el
+Servidor del aula : \emph{172.29.0.254}.
+\item No se aceptará otro Sistema Operativo.
+\item La instalación ha de ser nueva, \textbf{no podéis} utilizar las antiguas.
+\item Mientras se instala podéis ir preparando los comandos y el documento que
+entregaréis al final del exámen.
+\item \emph{¡MUCHA SUERTE A TOD@S!}.
+\end{itemize}
+
+\section{Descripición}
+\label{sec:org829d3f5}
+
+A la empresa \emph{Soluciones Eficaces Altamente Inestables} le ha surgido un
+competidor, se llama \emph{Pensamiento Profundo}. Se trata de una nueva compañia
+que viene apostando fuerte.
+
+\section{Instalación}
+\label{sec:orgfe3b6fd}
+
+Debemos instalar una MV con Xubuntu con las siguientes características:
+
+\begin{itemize}
+\item 2 CPUs.
+\item 2 GB de RAM.
+\item 1 Disco Duro de 10GB dinámico.
+\item 1 Tarjeta de red en modo \textbf{puente}.
+\item En el controlador SATA la \emph{Caché del Anfitrión} ha de estar habilitada.
+\end{itemize}
+
+Una vez instalada, instalar el comando \texttt{tree} que nos hará falta para la
+entrega, mediante la orden:
+
+\texttt{sudo apt install tree}
+
+\section{Usuarios}
+\label{sec:orgb1572a9}
+
+\textbf{Nota: Hasta 3 puntos}
+
+Los usuarios que \emph{finalmente} han de estar configurados en el equipo son los
+siguientes (y \textbf{solo} los siguientes), se adjunta tabla con las diferentes
+caracterísitcas el usuario:
+
+\begin{center}
+\begin{tabular}{lllll}
+Usuario & Login & Password & Administrador & Carpeta Personal\\
+\hline
+Arthur Dent & arthur & pr0t4g0n1st4 & Si & /home/armonia\\
+Ford Prefect & prefect & f0rdf0rd & No & /terraqueos/prefect\\
+Zaphod Beeblebrox & beeblebrox & pr3s1d3nt3 & Si & /politico/expresidente\\
+Tricia McMillan & tricia & tr1ll14n & No & /terraqueos/tricia\\
+Marvin & marvin & m3l4nc0l14 & Si & /robots/marvin\\
+\end{tabular}
+\end{center}
+
+Además existen una serie de grupos \emph{adicionales} cuyos integrantes son los
+siguientes:
+
+\begin{center}
+\begin{tabular}{lllll}
+Usuario/ Grupos & terraqueos & politicos & galacticos & robots\\
+\hline
+arthur & x &  &  & \\
+prefect & x &  & x & \\
+beeblebrox &  & x & x & x\\
+tricia & x & x & x & \\
+marvin &  &  &  & X\\
+\end{tabular}
+\end{center}
+
+Estos grupos se utilizarán para otorgarles permisos de escritura y lectura a
+diferentes carpetas que se encontrarán en diferentes particiones tal y como se
+muestra en el siguiente apartado.
+
+\section{Discos Duros y Puntos de Montaje}
+\label{sec:org30b3288}
+
+\textbf{Nota: Hasta 3 puntos}
+
+Se añadirán a la máquina virtual los siguientes discos:
+
+\begin{center}
+\begin{tabular}{lll}
+Disco & Tamaño & Dispositvo\\
+\hline
+terraqueos.vdi & 2GB & /dev/sdb\\
+polgalbots.vdi & 4GB & /dev/sdc\\
+compartido.vdi & 2GB & /dev/sdd\\
+\end{tabular}
+\end{center}
+
+
+Una vez añadidos se crearán las siguientes particiones y se establecerán los
+siguientes puntos de montaje:
+
+\begin{center}
+\begin{tabular}{llll}
+Partición & Tamaño & Sistema de Ficheros & Punto de Montaje\\
+\hline
+/dev/sdb1 & 2GB & ext3 & /terraqueos\\
+/dev/sdc1 & 2GB & ext4 & /politicos\\
+/dev/sdc2 & 2GB & btrfs & /robots\\
+/dev/sdd1 & 2GB & ext4 & /compartido\\
+\end{tabular}
+\end{center}
+
+\section{Permisos de compartido.}
+\label{sec:org1eaeb5b}
+
+\textbf{Nota: Hasta 2 puntos}
+
+En la carpeta \texttt{compartido} debe haber una carpeta por cada uno de los \emph{grupos
+adicionales} y debemos permitir a los usuarios pertenecientes a dichos grupos
+escribir y leer dentro, impidiendo \emph{cualquier otro acceso} a los usuarios que
+\textbf{no sean} de ese grupo, excepto al usuario \texttt{marvin} que debe poder realizar
+cualquier acción en \textbf{todos} los ficheros y carpetas de \texttt{compartido}.
+
+\section{Pruebas}
+\label{sec:orge7d935f}
+
+\textbf{Nota: Hasta 2 puntos}
+
+Se deben realizar las siguientes comprobaciones:
+
+\begin{itemize}
+\item Todos los usuarios pueden iniciar sesión gráfica.
+\item Todos los usuarios tienen el \texttt{\$HOME} bien establecido.
+\item Los permisos de las carpetas personales (\$HOME) son los correctos.
+\item Los puntos de montaje son los correctos y se montan en el arranque.
+\item Mediante el uso de los comando \texttt{touch} y \texttt{cat} ir pasando por todos los usuarios y
+realizando pruebas de creación y lectura de permisos en los diferentes
+ficheros y carpetas de \texttt{compartido}.
+\end{itemize}
+
+
+Se deben hacer capturas de pantalla de las siguientes acciones para cada uno
+de los usuarios:
+
+\begin{enumerate}
+\item Login Gráfico
+\item Abrir una terminal y ejecutar las órdenes:
+\begin{itemize}
+\item \texttt{echo \$HOME}
+\item \texttt{groups \$USER}
+\item \texttt{touch /compartido/terraqueos/\$USER.datos}
+\item \texttt{touch /compartido/politicos/\$USER.datos}
+\item \texttt{touch /compartido/galacticos/\$USER.datos}
+\item \texttt{touch /compartido/robots/\$USER.datos}
+\end{itemize}
+\end{enumerate}
+
+\section{Entrega}
+\label{sec:orgeb07752}
+
+Debéis presentar en un documento PDF los siguientes \emph{items}.
+
+\begin{itemize}
+\item El contenido del fichero \texttt{/etc/fstab} de la MV.
+\item La salida del comando \texttt{mount} en la MV.
+\item La salida del comando \texttt{tail -n 10 /etc/passwd} en la MV.
+\item La salida del comando \texttt{tree -pugf /compartido} en la MV.
+\item Una captura de la sesión de \emph{cada uno de los usuarios} donde se muestre que
+la carpeta personal es la que está establecida en la \emph{tabla} del exámen y no
+\texttt{/home/usuario} (excepto para el usuario \texttt{arthur}).
+\item Las capturas de pantalla de las acciones de pruebas del apartado anterior.
+\end{itemize}
+\end{document}
