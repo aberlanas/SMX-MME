@@ -1,0 +1,44 @@
+#+TITLE: UD 08 - Ejercicios lspci
+#+AUTHOR: Angel Berlanas
+#+EMAIL: berlanas_ang@gva.es
+#+LANGUAGE: es
+#+latex_header: \hypersetup{colorlinks=true,linkcolor=black}
+
+* Introducción
+
+  Acabamos de entrar en la empresa /Profesionales Responsables/, estamos en un
+  contrato de prueba, esta mañana a primera hora ha venido un cliente y nos ha
+  pedido una serie de ~scripts~ que le ayuden para identificar una serie de
+  /drivers/ que tiene en sus sistemas.
+
+  Está teniendo problemas con algunos y necesita saber cuáles /blacklistear/.
+  
+  Debemos entregar un ~script~ por cada uno de los ejercicios que se muestran a
+  continuación.
+
+  Para ello necesitais de una pequeña /masterclass/ que os acaba de dar vuestro
+  compañero. 
+
+  PD: La numeración y nombres de los scripts son importantes.
+
+* script01_intel_amd.sh
+
+  Crear un Script que cuando se ejecute, pregunte al usuario si quiere listar
+  los dispositivos conectados a los puertos PCI que son de la marca intel o amd.
+  
+  Una vez preguntado, listar /solo/ aquellos que sean de esa marca y a
+  continuación se muestre el número de dispositivos.
+  
+* script02_pci_bridge.sh
+
+  Crear un Script que nos indique cuantos dispositivos de tipo ~PCI bridge~ tenemos y
+  /además/ los liste.
+
+* script03_modulo_kernel.sh
+
+  Crear un Script que nos pregunte si Tarjeta de Red o de Audio y nos muestre el
+  módulo del kernel asociado a dicha tarjeta pci.
+
+* script04_modulo_kernel_2.sh
+
+  

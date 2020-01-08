@@ -40,7 +40,7 @@
   - 2 GB de RAM.
   - 1 Disco Duro de 10GB dinámico.
   - 1 Tarjeta de red en modo *puente*.
-  - En el controlador SATA la /Caché del Anfitrión/ ha de estar habilitada.
+  - En el 
   
   Una vez instalada, instalar el comando ~tree~ que nos hará falta para la
   entrega, mediante la orden:
