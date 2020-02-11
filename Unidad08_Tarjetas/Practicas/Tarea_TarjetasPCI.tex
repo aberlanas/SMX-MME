@@ -1,0 +1,97 @@
+% Created 2020-01-14 mar 06:25
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\usepackage[newfloat]{minted}
+\hypersetup{colorlinks=true,linkcolor=black}
+\author{Angel Berlanas}
+\date{\today}
+\title{UD 08 - Ejercicios lspci}
+\hypersetup{
+ pdfauthor={Angel Berlanas},
+ pdftitle={UD 08 - Ejercicios lspci},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 26.3 (Org mode 9.1.9)}, 
+ pdflang={Spanish}}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+
+\section{Introducción}
+\label{sec:org6c5e7ea}
+
+Acabamos de entrar en la empresa \emph{Profesionales Responsables}, estamos en un
+contrato de prueba, esta mañana a primera hora ha venido un cliente y nos ha
+pedido una serie de \texttt{scripts} que le ayuden para identificar una serie de
+\emph{drivers} que tiene en sus sistemas.
+
+Está teniendo problemas con algunos y necesita saber cuáles \emph{blacklistear}.
+
+Debemos entregar un \texttt{script} por cada uno de los ejercicios que se muestran a
+continuación.
+
+Para ello necesitais de una pequeña \emph{masterclass} que os acaba de dar vuestro
+compañero. 
+
+PD: La numeración y nombres de los scripts son importantes.
+
+\section{script01IntelAmd.sh}
+\label{sec:orgc22d52b}
+
+Crear un Script que cuando se ejecute, pregunte al usuario si quiere listar
+los dispositivos conectados a los puertos PCI que son de la marca intel o amd.
+
+Una vez preguntado, listar \emph{solo} aquellos que sean de esa marca y a
+continuación se muestre el número de dispositivos.
+
+\section{script02PCIBridge.sh}
+\label{sec:org0715e74}
+
+Crear un Script que nos indique cuantos dispositivos de tipo \texttt{PCI bridge} tenemos y
+\emph{además} los liste.
+
+\section{script03ModuloKernel.sh}
+\label{sec:org33831ae}
+
+Crear un Script que nos pregunte si Tarjeta de Red o de Audio y nos muestre el
+módulo del kernel asociado a dicha tarjeta pci.
+
+\section{script04RedBasico.sh}
+\label{sec:orgbc6c00e}
+
+Crear un script que muestre el nombre de los diferentes dispositivos de red
+que tenga nuestra máquina. A continuación nos debe preguntar por uno de ellos
+y nosotros podremos introducir su nombre. Una vez introducido, mostrará la IP
+en su versión IPv4 e IPv6.
+
+\section{script05AudioNoTanBasico.sh}
+\label{sec:orgd34817e}
+
+Crear un script que muestre en porcentaje el volumen del audio del altavoz
+maestro.
+
+Ejemplo de salida:
+
+\begin{minted}[]{bash}
+
+smx@cliente:~$./script05_audio_notanbasico.sh
+23%
+smx@cliente:~$
+
+\end{minted}
+\end{document}
