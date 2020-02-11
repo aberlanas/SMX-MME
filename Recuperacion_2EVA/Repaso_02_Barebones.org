@@ -1,0 +1,39 @@
+#+TITLE: UD09 - Repaso - Barebone
+#+AUTHOR: Angel Berlanas Vicente
+#+EMAIL: berlanas_ang@gva.es
+#+LANGUAGE: es
+#+latex_header: \hypersetup{colorlinks=true,linkcolor=black}
+
+* Aviso navegantes
+
+  Leed atentamente los enunciados de las actividades y buscad soluciones que se
+  adapten a las necesidades.
+
+  Asumid para todas las preguntas que estáis en un APP y que esas preguntas os
+  las hace un cliente que /NO SABE/ de informática. Contestad de manera correcta 
+
+* Pregunta 01 : Barebone
+
+  ¿Qué es un Barebone?¿Para que tipo de cliente puede ser interesante?
+
+* Pregunta 02 : Comparativa de Barebones
+
+  En [[https://www.pccomponentes.com/barebones][esta página]] podemos encontrar diferentes barebones, elige 2 de ellos cuya
+  diferencia de precio no sea mayor de 100 euros y realiza una comparativa
+  detallada.
+
+* Pregunta 03 : CPUs para Barebones
+
+  ¿Qué modelos de procesador son los que se utilizan en los barebones? ¿Qué
+  significan las siglas ~NUC~?
+
+* Pregunta 04 : Formatos de placas para Barebones
+  
+  ¿Cuáles son *todos* los formatos de placa base que aparecen en la web
+  anterior? ¿Qué tamaño tienen?.
+
+* Pregunta 05 : Intel Rapid Storage
+
+  ¿Qué es esto?¿Para que me sirve a mi?¿Debería pagar más por tener esto?
+
+
