@@ -1,0 +1,151 @@
+% Created 2020-02-17 lun 20:02
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\usepackage[newfloat]{minted}
+\hypersetup{colorlinks=true,linkcolor=black}
+\author{Angel Berlanas Vicente}
+\date{\today}
+\title{UD09 - Repaso - Placas Base}
+\hypersetup{
+ pdfauthor={Angel Berlanas Vicente},
+ pdftitle={UD09 - Repaso - Placas Base},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 26.3 (Org mode 9.1.9)}, 
+ pdflang={Spanish}}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+
+\section{Aviso navegantes}
+\label{sec:orgb77d332}
+
+Leed atentamente los enunciados de las actividades y buscad soluciones que se
+adapten a las necesidades.
+
+\section{Pregunta 01 : Placas Base.}
+\label{sec:orgcdd6b4c}
+
+La placa base es uno de los componentes más importantes de nuestro ordenador,
+sin embargo se le presta poca atención más allá de que sea capaz de soportar
+los diferentes componentes que van \emph{sobre} ella. Esto a veces da lugar a un
+fenómeno muy habitual en el mundo de los computadores que es el \emph{Cuello de
+Botella}. Redacta un pequeño texto en el que expliques de manera sencilla en
+que consiste dicho problema y sobre que tipo de recursos se suele dar.
+
+\section{Pregunta 02 : SouthBridge}
+\label{sec:orgf347f0d}
+
+En el puente sur \emph{(SouthBridge)} están una conectados una serie de
+dispositivos. ¿Qué tipos de dispositivos son?. 
+
+\section{Pregunta 03 : dmidecode}
+\label{sec:orga0c3e66}
+
+Si hechábais en falta los scripts\ldots{}no hay problema aquí tenéis unos pocos
+para que no perdamos la costumbre.
+
+Para obtener la nota máxima por cada uno de los scripts deben ser ejecutados y
+que devuelvan exáctamente lo mismo que se muestra (tened en cuenta que puede
+ser diferente en vuestras máquinas, pero no vale hacer un \texttt{echo COSAS}).
+
+Probad los scripts, aseguraos que muestran \emph{exactamente lo que pido}. Es muy
+sencillo obtener un 10 y muy facil un 0.
+
+Pistas: \emph{Todos los scripts se realizan parseando la salida de \texttt{dmidecode} y}
+\emph{ejecutando operaciones sobre esos datos obtenidos.}.
+
+Para la ejecución de esto necesitaréis o un \textbf{\textbf{GNU/LinuX}} instalado o la
+Máquina Virtual.
+
+Los nombres de los scripts son los que aparecen como título de los diferentes apartados.
+
+\subsection{dmidecode01.sh}
+\label{sec:orgf17f3ef}
+
+Debe mostrar el voltaje al que trabaja vuestro procesador:
+
+\begin{center}
+\begin{tabular}{ll}
+\textbf{\textbf{Ejecución}} : & \texttt{sudo ./dmidecode01.sh}\\
+\textbf{\textbf{Salida}}: & \texttt{Voltios: 1.3 V}.\\
+\end{tabular}
+\end{center}
+
+\subsection{dmidecode02.sh}
+\label{sec:org5a55dbf}
+
+Debe mostrar el \emph{Vendor} de la BIOS.
+
+\begin{center}
+\begin{tabular}{ll}
+\textbf{\textbf{Ejecución}} : & \texttt{sudo ./dmidecode02.sh}\\
+\textbf{\textbf{Salida}}: & \texttt{Vendedor: American Megatrends Inc}.\\
+\end{tabular}
+\end{center}
+
+\subsection{dmidecode03.sh}
+\label{sec:org8d85d88}
+
+Debe indicar si soporta UEFI.
+
+\begin{center}
+\begin{tabular}{ll}
+\textbf{\textbf{Ejecución}} : & \texttt{sudo ./dmidecode03.sh}\\
+\textbf{\textbf{Salida}}: & \texttt{Soporta UEFI : Si}.\\
+\end{tabular}
+\end{center}
+
+\subsection{dmidecode04.sh}
+\label{sec:org96c164e}
+
+Debe indicar de cada uno de los Slots de PCIExpress x1 que voltaje provee y
+si está disponible o no.
+
+\begin{center}
+\begin{tabular}{ll}
+\textbf{\textbf{Ejecución}} : & \texttt{sudo ./dmidecode04.sh}\\
+\textbf{\textbf{Salida}}: & \texttt{x1\_1 : Disponible : 3,3 V}.\\
+ & \texttt{x1\_2 : No disponible: 3,3 V}.\\
+\end{tabular}
+\end{center}
+
+
+\section{Pregunta 04 : BIOS y UEFI.}
+\label{sec:org6a7b66f}
+
+¿Recordáis el texto en inglés que hablaba del arranque de un equipo?
+Indica en el proceso que vas a ver a continuación si hubiera algún error:
+
+\begin{center}
+\begin{tabular}{rl}
+Paso & Descripción\\
+1 & Equipo se pone en marcha.\\
+2 & La BIOS comprueba que disco duro es el primero.\\
+3 & Se ejecuta el POST.\\
+4 & Una vez seleccionado el disco duro, se busca el sector de arranque.\\
+5 & En el caso de las UEFIs se permiten tamaños más grandes de particiones\\
+6 & No se puede modificar el siguiente reinicio desde el Sistema Operativo arrancado.\\
+\end{tabular}
+\end{center}
+
+En caso de que hubiera algún error puede estar en dos sitios: Por un lado en
+el \emph{orden} de la ejecución y por otro en la \emph{Descripción}. Reescribe los pasos
+indicando qué matiz debe corregirse para que sea cierto. Tenéis la solución en
+el artículo \^{}\_\^{}.
+\end{document}
