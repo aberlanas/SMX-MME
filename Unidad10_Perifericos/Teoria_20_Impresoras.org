@@ -1,0 +1,10 @@
+#+TITLE: UD10 - Periféricos - Ratones
+#+AUTHOR: Angel Berlanas
+#+latex_header: \hypersetup{colorlinks=true,linkcolor=black}
+
+* Historía.
+* Funcionamiento.
+* Tipos.
+* Componentes.
+* Conexiones.
+* Configuración.
