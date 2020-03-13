@@ -2,7 +2,20 @@
 #+AUTHOR: Angel Berlanas Vicente
 #+latex_header: \hypersetup{colorlinks=true,linkcolor=black}
 
-* Tarea : cups-PDF
+A lo largo de las siguientes tareas configuraremos el servidor de Impresión CUPS
+para que se comporte de maneras diferentes.
+
+Recordad que todo los /servicios/ se componen de 3 partes fundamentales:
+
+ * Ficheros de configuración.
+ * Ficheros de registro (/logs/).
+ * Ficheros binarios (el propio servicio).
+
+El dominio de estos 3 conceptos nos permitirá /adaptarnos/ a cualquier situación
+y sabremos configurar cualquier servicio que nos pidan si tenemos en cuenta que
+siempre se comportan de un modo parecido. 
+
+* Tarea 01 : cups-PDF
 
   Instalar en la máquina virtual el paquete ~cups-pdf~ y configurar la impresora
   para que su /Directorio de Salida/ sea :
@@ -16,26 +29,24 @@
   * El registro del servicio de impresión. 
   * El fichero de configuración modificado.
   * Una captura donde se muestren los permisos y la ruta del fichero.
-  
+  * Una captura donde se muestren que los ficheros se están imprimendo.
 
-* Tarea : Tenkeyless 01
-  
-  Busca en Internet información acerca de estos teclados. ¿Qué tipo de usuari@s los
-  suele adquirir / configurar.?
+  Comprobar también que se imprimen los ficheros y se crean en el directorio
+  configurado. 
 
-* Tarea : Tenkeyless  02
+* Tarea 02 : logs - cups-PDF
 
-  Buscando en Internet acerca de los teclados Tenkeyless hemos encontrado esta
-  descripción:
+  Modificar la impresora configurada anteriormente para que su carpeta de
+  ~logs~, se encuentre en : 
 
-  | Component      | -             |
-  | Switches       | Cherry MX     |
-  | Lighting       | White per-key |
-  | Programmable   | Yes           |
-  | Keycap Profile | OEM           |
-  | Stabilizers    | Cherry Style  |
+  ~/var/log/cups-senia/~
 
-  Explica con tus palabras que significa cada uno de estos componentes y
-  prestaciones.
+  Deberéis crear la ruta, así como los permisos. 
 
+  Adjuntar:
+
+  * El fichero de configuración.
+  * Una captura de los diferentes ficheros de log que se crean al realizar las
+    operaciones normales de impresión, etc. (Esos ficheros se han de crear en la
+    ruta anteriormente descrita).
 
