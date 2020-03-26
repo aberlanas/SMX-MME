@@ -12,7 +12,7 @@ Vamos a realizar una pequeña labor de investigación.
 
 Vamos a repasar algunos conceptos y hacemos algunas prácticas.
 
-Realizar todo en un documento y lo subís a la plataforma o lo enviáis por correo antes del **Viernes 27 de Marzo de 2020**. 
+Realizar todo en un documento y lo subís a la plataforma o lo enviáis por correo antes del **Domingo 29 de Marzo de 2020**.
 
 El nombre del fichero ha de ser:
 
