@@ -28,3 +28,8 @@ Android usa esto (al igual que otros SO) y aquí tenéis un ejemplo de Sistema m
 Describid todos los módulos que aparecen en la imágen. Buscad información acerca de para qué sirve (cual es su función). Parece mucho, pero no lo es tanto. 
 
 Describidlo con vuestras propias palabras. Además os aconsejo que os vayáis haciendo un glosario de palabras .
+
+## Tarea 03 : Baseband
+
+¿Qué es este concepto en Android? Busca información en Internet acerca de él y *redactalo* con tus propias palabras.
+
