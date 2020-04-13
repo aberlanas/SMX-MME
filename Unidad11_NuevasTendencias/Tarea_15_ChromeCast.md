@@ -34,4 +34,29 @@ En la empresa *Oficinistas contra el Aburrimiento* han adquirido una nueva sala 
 * Proyector
 * Chromecast
 * Soporte proyector.
-* Apps necesarias para una Oficina (imaginad y buscad información)
+* Apps necesarias para una Oficina (imaginad y buscad información), pero se han de cubrir los siguientes aspectos:
+  * Proyección desde portátil.
+  * Navegación Web.
+  * Diapositivas de fotos.
+  * Música y Vídeos proyectados.
+
+## Tarea 05 : Tabla de términos
+
+Completa la siguiente tabla relacionada con conceptos y tecnologías relacionadas con dispositivos de multimedia (de esta práctica).
+
+| Concepto | Traducción | Explicación (*Con tus propias palabras*) |
+|----------|------------|------------------------------------------|
+| Multicast| | |
+| Unicast  | | |
+| Pairing  | | |
+| Device   | | |
+| WiFi Identifier | | |
+| Google Account | | |
+| ScreenCast | | |
+| Delay    | | |
+| Market   | | |
+| Remote Controller | | |
+| Streaming | | |
+| Audio  track | | |
+| Subtitle track | | |
+

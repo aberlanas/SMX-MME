@@ -1,6 +1,7 @@
 #!/bin/bash
 
-echo "Preparando el entorno"
+echo "== [ Compilador de Tareas : SMX - MME ] =="
+
 mkdir -p PDFS
 
 # Some values
@@ -20,7 +21,6 @@ PANDOC_OPTIONS="-V fontsize=12pt -V mainfont="Ubuntu" --pdf-engine=xelatex "
 #
 # Programacion Didactica
 PD_PATH="ProgramacionDidactica"
-
 
 #
 # UD : Nombres de las Unidades
@@ -243,7 +243,6 @@ make_UD10(){
 
 make_UD11(){
     cd ${UD11_NAME}
-    make_teoria ${UD11_NAME}
     make_practicas ${UD11_NAME}
     cd ..
 
