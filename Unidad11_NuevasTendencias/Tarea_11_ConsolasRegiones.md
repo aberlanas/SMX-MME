@@ -14,7 +14,7 @@ Durante este tema también vamos a ir viendo las diferentes consolas y conceptos
 Buscad en Internet información acerca de las siguientes preguntas:
 
  * ¿Qué son las regiones de los Juegos y de los DVD? 
- * Coinciden en ámbito geográfico? 
+ * ¿Coinciden en ámbito geográfico? 
  * ¿Porqué no se estandárizo esto desde el principio?
 
 ## Tarea 02 : Vale más vídeo que 1000 palabras.
