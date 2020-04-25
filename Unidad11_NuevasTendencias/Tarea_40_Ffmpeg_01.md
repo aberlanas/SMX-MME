@@ -9,6 +9,10 @@ keywords: [SMX, MME]
 
 Tal y como hemos visto en clase existen multitud de formatos y algoritmos de compresión tanto para audio como para vídeo. Vamos a realizar ahora una serie de tareas que nos permitirán profundizar más en cómo funciona todo el tema de multimedia, y los requisitos que son necesarios para configurar los periféŕicos.
 
+![Nyan Cat](imgs/nyanCat.png)
+\
+
+
 Enlaces de interés:
 
 * https://www.ostechnix.com/20-ffmpeg-commands-beginners/
@@ -24,6 +28,7 @@ Usando el FFMPEG que habéis instalado, obtener información de los diferentes c
 Realizad una captura de pantalla del resultado y adjuntarla como solución.
 
 ![Ejemplo Ffmpeg](imgs/ffmpeg_info.png)
+\
 
 ## Tarea 02 : Convirtiendo a avi.
 
