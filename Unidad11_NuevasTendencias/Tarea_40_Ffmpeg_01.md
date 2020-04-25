@@ -9,9 +9,8 @@ keywords: [SMX, MME]
 
 Tal y como hemos visto en clase existen multitud de formatos y algoritmos de compresión tanto para audio como para vídeo. Vamos a realizar ahora una serie de tareas que nos permitirán profundizar más en cómo funciona todo el tema de multimedia, y los requisitos que son necesarios para configurar los periféŕicos.
 
-![Nyan Cat](imgs/nyanCat.png)
+![Nyan Cat](imgs/nyanCat.png){ width=50% }
 \
-
 
 Enlaces de interés:
 
@@ -20,6 +19,7 @@ Enlaces de interés:
 * Clase del 24 de Abril de 2020 (Aules).
 
 |*Aviso Navegantes*|
+|------------------|
 | Todas las tareas que requieran de la ejecución de un comando, ya sea en Windows,GNU/LinuX,Android,... además de lo que se pida en la tarea, debe adjuntar el comando que se debe utilizar para su solución.|
 
 ## Tarea 01 : Obteniendo información de  un Fichero
