@@ -1,5 +1,5 @@
 ---
-title: Unidad 11 - Nuevas Tendencias - FFMPEG
+title: Unidad 11 - Nuevas Tendencias - FFMPEG + Scripts
 header-includes: |
 lang: es-ES
 keywords: [SMX, MME]
@@ -9,6 +9,8 @@ keywords: [SMX, MME]
 
 Tal y como hemos visto en clase existen multitud de formatos y algoritmos de compresión tanto para audio como para vídeo. Vamos a realizar ahora una serie de tareas que nos permitirán profundizar más en cómo funciona todo el tema de multimedia, y los requisitos que son necesarios para configurar los periféŕicos.
 
+Además vamos a ir componiendo un pequeño script en GNU/LinuX o en Windows que use parámetros y que compruebe una serie de items.
+
 ![Nyan Cat](imgs/nyanCat.png){ width=50% }
 \
 
@@ -16,19 +18,15 @@ Enlaces de interés:
 
 * https://www.ostechnix.com/20-ffmpeg-commands-beginners/
 * Vídeo del Nyan Cat que encontraréis en la plataforma.
-* Clase del 24 de Abril de 2020 (Aules).
+* Clase del 27 y 28 de Abril de 2020 (Aules).
 
 |*Aviso Navegantes*|
 |------------------|
 | Todas las tareas que requieran de la ejecución de un comando, ya sea en Windows,GNU/LinuX,Android,... además de lo que se pida en la tarea, debe adjuntar el comando que se debe utilizar para su solución.|
 
-## Tarea 01 : Obteniendo información de  un Fichero
+## Tarea 01 : x265 y Argumentos
 
-Usando el FFMPEG que habéis instalado, obtener información de los diferentes códecs e info relativa al vídeo de NyanCat que os adjunto.
-Realizad una captura de pantalla del resultado y adjuntarla como solución.
 
-![Ejemplo Ffmpeg](imgs/ffmpeg_info.png)
-\
 
 ## Tarea 02 : Convirtiendo a avi.
 
