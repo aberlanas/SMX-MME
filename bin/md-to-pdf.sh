@@ -243,6 +243,7 @@ make_UD10(){
 
 make_UD11(){
     cd ${UD11_NAME}
+    make_teoria ${UD11_NAME}
     make_practicas ${UD11_NAME}
     cd ..
 
