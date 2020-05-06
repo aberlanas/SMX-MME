@@ -1,0 +1,30 @@
+// question: 0  name: Switch category to $course$/top
+$CATEGORY: $course$/top
+
+
+// question: 0  name: Switch category to $course$/top/Por defecto en INF_SMX_1_MME
+$CATEGORY: $course$/top/Por defecto en INF_SMX_1_MME
+
+
+// question: 0  name: Switch category to $course$/top/Por defecto en INF_SMX_1_MME/UD10_Impresoras
+$CATEGORY: $course$/top/Por defecto en INF_SMX_1_MME/UD11_NuevasTendencias
+
+
+// name: SistemasEmbebidos_01
+::SistemasEmbebidos_01::Podemos encontrar sistemas Embebidos en (marca todas las respuestas correctas):{
+	~%25%SMART TV.
+	~%25%Sistemas de control de tráfico.
+	~%25%Sistemas de control de riego.
+	~%25%Casas Inteligentes.
+	~%-100%Ninguna de las otras respuestas.
+}
+
+// name: SistemasEmbebidos_
+::SistemasEmbebidos_::Enunciado:{
+	~%100%
+	~%-25%
+	~%-25%
+	~%-25%
+}
+
+
