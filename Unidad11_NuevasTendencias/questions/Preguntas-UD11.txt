@@ -19,12 +19,333 @@ $CATEGORY: $course$/top/Por defecto en INF_SMX_1_MME/UD11_NuevasTendencias
 	~%-100%Ninguna de las otras respuestas.
 }
 
-// name: SistemasEmbebidos_
-::SistemasEmbebidos_::Enunciado:{
-	~%100%
-	~%-25%
-	~%-25%
-	~%-25%
+// name: SistemasEmbebidos_02
+::SistemasEmbebidos_02::¿Qué tamaño tiene una Raspberry PI?:{
+	~%100%El de una tarjeta de crédito (aproximadamente).
+	~%-25%Es un barebone.
+	~%-25%Depende en gran medida de la versión.
+	~%-25%Ninguna otra respuesta es correcta.
 }
 
 
+
+// name: SistemasEmbebidos_03
+::SistemasEmbebidos_03::Los sistemas embebidos...:{
+	~%100%Tienen los mismos componentes base que los ordenadores normales.
+	~%-25%Siempre tienen conexión USB.
+	~%-25%Siempre tienen conexión a la red.
+	~%-25%Siempre tienen monitor.
+}
+
+// name: SistemasEmbebidos_04
+::SistemasEmbebidos_04::Un sistema de riego automático podría ser gestionado...:{
+	~%100%Mediante el puerto GPIO, estableciendo sensores y voltajes.
+	~%-25%Mediante el puerto GPIO, estableciendo las capas OSI.
+	~%-25%Mediante el puerto GPIO, aplicando máscaras.
+	~%-25%Ninguna otra respuesta es correcta.
+}
+
+
+// name: SistemasEmbebidos_05
+::SistemasEmbebidos_05::Un lenguaje de programación muy usado con Raspberrys es...:{
+	~%100%Python.
+	~%-25%C#
+	~%-25%Visual Basic
+	~%-25%HTML
+}
+
+
+// name: SistemasEmbebidos_06
+::SistemasEmbebidos_06::El origen de la Raspberry es...:{
+	~%100%Reino Unido.
+	~%-25%Nápoles.
+	~%-25%El Imperio Austrohúngaro.
+	~%-25%Otomanos.
+}
+
+
+// name: SistemasEmbebidos_07
+::SistemasEmbebidos_07::¿Qué componente falta en una RaspberryPI base?:{
+	~%100%Almacenamiento persistente.
+	~%-25%Almacenamiento volátil.
+	~%-25%Alimentación.
+	~%-25%Conexiones de audio y video.
+}
+
+
+// name: SistemasEmbebidos_08
+::SistemasEmbebidos_08::¿Qué modelo de Raspberry Pi tiene un Puerto (Ethernet) de  hasta 1000Mbps vía hub USB limitado a 300Mbit/s?:{
+	~%100%Modelo 3 B+
+	~%-25%Modelo 3 B
+	~%-25%Modelo 3 A+
+	~%-25%Modelo 2 B+
+}
+
+
+// name: SistemasEmbebidos_09
+::SistemasEmbebidos_09::¿Cuantas pistas de audio podíamos sacar con la salida de audio de la Raspberry 2 Modelo B?:{
+	~%100%2
+	~%-25%1
+	~%-25%3
+	~%-25%Ninguna de las otras.
+}
+
+
+// name: SistemasEmbebidos_10
+::SistemasEmbebidos_10::La arquitectura del microprocesador de una Raspberry es...:{
+	~%100%ARM
+	~%-25%AMD
+	~%-25%Intel
+	~%-25%No tiene arquitectura
+}
+
+
+// name: SistemasEmbebidos_11
+::SistemasEmbebidos_11::La Arquitectura ARM está pensada para ...:{
+	~%100%Dispositivos de poco voltaje.
+	~%-25%Dispositivos de alta capacidad de fotografía.
+	~%-25%Dispositivos de alta capacidad de comunicación.
+	~%-25%Ninguna de las otras respuestas.
+}
+
+
+// name: SistemasEmbebidos_12
+::SistemasEmbebidos_12::Las arquitecturas de microprocesadores más famosas son...:{
+	~%100%AMD, Intel y ARM.
+	~%-25%ARM y RISC.
+	~%-25%RISC, Intel y ARM.
+	~%-25%RISC, Intel y AMD.
+}
+
+
+// name: SistemasEmbebidos_13
+::SistemasEmbebidos_13::El puerto GPIO se utiliza para...:{
+	~%100%Comunicar con dispositivos y sensores directamente a la Raspberry.
+	~%-25%Realizar tareas gráficas.
+	~%-25%Es un puerto de impresión.
+	~%-25%Gestiona Puertos de Intro Ocupación
+}
+
+// name: SistemasEmbebidos_14
+::SistemasEmbebidos_14::¿Qué es un Shield en Arduino y Raspberry?:{
+	~%100%Un añadido hardware que proporciona funcionalidad.
+	~%-25%Un añadido software que proporciona funcionalidad.
+	~%-25%La carcasa de protección.
+	~%-25%El Antivirus de Raspberry y Arduino.
+}
+
+
+// name: SistemasEmbebidos_15
+::SistemasEmbebidos_15::En la Raspberry PI 3 Modelo B ¿Qué estándares inalambricos de comunicación se establecieron? :{
+	~%100%Wifi y Bluetooth.
+	~%-25%Bluetooth y Radiofrecuencias.
+	~%-25%Radiofrecuencias, Bluetooth y Wifi.
+	~%-25%Wifi y Radiofrecuencias.
+}
+
+
+// name: SistemasEmbebidos_16
+::SistemasEmbebidos_16::¿Sobre que Distribución GNU/LinuX está basado Raspbian?:{
+	~%100%Debian
+	~%-25%Ubuntu
+	~%-25%OpenElec
+	~%-25%Android
+}
+
+
+// name: SistemasEmbebidos_17
+::SistemasEmbebidos_17::Un bootloader es ...:{
+	~%100%Un cargador de arranque.
+	~%-25%Un cargador de roms.
+	~%-25%Un sistema Operativo.
+	~%-25%Una distribución GNU/LinuX.
+}
+
+
+// name: SistemasEmbebidos_18
+::SistemasEmbebidos_18::¿Donde se instala Raspbian en la Raspberry?:{
+	~%100%En una tarjeta SD adicional.
+	~%-25%En la ROM.
+	~%-25%En la RAM.
+	~%-25%No se instala.
+}
+
+
+// name: SistemasEmbebidos_19
+::SistemasEmbebidos_10::En un proceso de instalación de una Raspberry indica que paso no es indispensable.:{
+	~%100%Configurar NAT en la tarjeta de Red.
+	~%-25%Particionar.
+	~%-25%Seleccionar contraseña.
+	~%-25%Arrancar desde el sistema LIVE.
+}
+
+
+// name: SistemasEmbebidos_20
+::SistemasEmbebidos_20::¿Qué es una ISO?:{
+	~%100%Un fichero de imagen de disco.
+	~%-25%Un estándar de fichero.
+	~%-25%Un estándar de calidad.
+	~%-25%La polaridad de los parámetros de una Foto.
+}
+
+
+// name: SistemasEmbebidos_21
+::SistemasEmbebidos_21::¿Qué opción de arranque deberiamos elegir para arrancar desde una ISO en una Raspberry?:{
+	~%100%USB
+	~%-25%Red
+	~%-25%HardDisk
+	~%-25%Ninguna
+}
+
+
+// name: Android_01
+::Android_01::Android es un SO destinado sobretodo a:{
+	~%100%Móviles.
+	~%-25%Portátiles.
+	~%-25%Televisiones.
+	~%-25%Ordenadores.
+}
+
+
+// name: Android_02
+::Android_::Android está basado en :{
+	~%100%GNU/LinuX.
+	~%-25%Debian.
+	~%-25%NTOSKernel.
+	~%-25%Darwin.
+}
+
+
+// name: Android_03
+::Android_03::La empresa de Software más potente detrás de Android es:{
+	~%100%Google.
+	~%-25%Huawei.
+	~%-25%Sony.
+	~%-25%Microsoft.
+}
+
+
+// name: Android_04
+::Android_04::¿Qué carpeta podemos encontrar en Android?:{
+	~%100%/dev/
+	~%-25%/Program Files/
+	~%-25%/local/
+	~%-25%/users/
+}
+
+
+// name: Android_05
+::Android_05::¿En qué carpeta están los ficheros de configuración generales?:{
+	~%100%/etc/
+	~%-25%/bin/
+	~%-25%/global/
+	~%-25%/oem/
+}
+
+
+// name: Android_06
+::Android_06::¿En que carpeta están los ejecutables de un sistema Android?:{
+	~%100%/bin/
+	~%-25%/config/
+	~%-25%/proc/
+	~%-25%/data/
+}
+
+
+// name: Android_07
+::Android_07::/lib contiene:{
+	~%100%Las bibliotecas compartidas entre aplicaciones.
+	~%-25%Los libros descargados.
+	~%-25%Datos del Kernel.
+	~%-25%El gestor de arranque.
+}
+
+
+// name: Android_08
+::Android_08::La carpeta Vendor de Android contiene:{
+	~%100%Datos propios del Fabricante.
+	~%-25%Datos propios del vendedor.
+	~%-25%Datos propios del usuario.
+	~%-25%Ninguna de las otras.
+}
+
+
+// name: Android_09
+::Android_09::Un gestor de Aplicaciones en Android se encarga de:{
+	~%100%Instalar, actualizar y desinstalar aplicaciones.
+	~%-25%Gestionar procesos.
+	~%-25%Gestionar usuarios.
+	~%-25%Gestionar impresion.
+}
+
+
+// name: Android_10
+::Android_10::¿Qué es Aptoide?:{
+	~%100%Un gestor de paquetes.
+	~%-25%Un gestor de procesos.
+	~%-25%Un gestor de terminal.
+	~%-25%Ninguna de las otras.
+}
+
+
+// name: Android_11
+::Android_11::SuperUsuario en Android es:{
+	~%100%Root.
+	~%-25%Administrador.
+	~%-25%User.
+	~%-25%Android.
+}
+
+
+// name: Android_12
+::Android_12::Los privilegios de SuperUsuario en Android en la terminal se pueden conseguir...:{
+	~%100%mediante el comando "su".
+	~%-25%mediante el comando "sudo su".
+	~%-25%mediante el comando "runas"
+	~%-25%No se pueden conseguir.
+}
+
+
+// name: Android_13
+::Android_13::Android x86 es un port para ejecutar e instalar Android sobre ...:{
+	~%100%AMD e Intel.
+	~%-25%AMD y Arm.
+	~%-25%Arm y RISC.
+	~%-25%RISC y Virtualbox.
+}
+
+
+// name: Android_14
+::Android_14::Algunas de las GAPPS son:{
+	~%100%Maps, Drive y Gmail.
+	~%-25%Maps, Youtube y Spotify.
+	~%-25%Gmail, Snapchat y Drive.
+	~%-25%Maps, Office365 y Gmail.
+}
+
+
+// name: Android_15
+::Android_15::La MV Valvik es...:{
+	~%100%Una MV dentro de Android.
+	~%-25%Un VirtualBox de Valvik.
+	~%-25%La ejecución de Aptoide.
+	~%-25%Cachés de Arranque.
+}
+
+
+// name: Android_16
+::Android_16::Los ficheros de instalación de Aplicaciones en Android son...:{
+	~%100%.apk
+	~%-25%.deb
+	~%-25%.msi
+	~%-25%.setup
+}
+
+
+// name: Android_17
+::Android_17::Cuales de los siguientes postres son todos versiones de Android:{
+	~%100%Lollipop, KitKat, Donut y Froyo.
+	~%-25%Lollipop, Oreo, CheeseCake y Muffin.
+	~%-25%Nugat, Oreo, Chocolate y Bollycao.
+	~%-25%Doritos y Oreo.
+}
