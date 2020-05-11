@@ -15,13 +15,14 @@ FICHERO=$1
 
 # Comprobamos que FICHERO existe, si existe mostrar un mensaje
 # FILL THE GAPS
-
-# Si no existe salir.
-
-
+if [ -e $FICHERO ]; then
+    echo " * El fichero : $FICHERO existe"
+else 
+    # Si no existe salir.
+    exit 0
+fi
 
 # Cambiamos el formato de fichero a AVI.
 ffmpeg -i $FICHERO Ejer01.avi
 
 exit 0
-
