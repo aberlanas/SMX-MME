@@ -6,7 +6,7 @@ lang: es-ES
 keywords: [SMX]
 ---
 
-# Exámen: Red Básica en Windows
+# Exámen: Red Básica en Windows - Adaptado
 
 Utilizando los conceptos que hemos visto en teoría ( y los comandos), realiza los siguientes ejercicios mediante el VirtualBox y una máquina virtual en Windows, cambiando la **configuración** de la RED de la MV. 
 
@@ -90,7 +90,7 @@ Salida del comando:
 
 ### Modo
 
-Estableciendo la conexión a **NAT**
+Utilizando tu ordenador físico:
 
 ### Comandos y Comprobaciones
 
@@ -98,39 +98,22 @@ Estableciendo la conexión a **NAT**
   * IP de la tarjeta de red.
   * IP de la Puerta de Enlace
   * IP del Servidor/es DNS.
+  * Tiempo de la concesión DHCP.
 
 ### Preguntas asociadas
 
-  * ¿Podemos tener varias máquinas *arrancadas* en VirtualBox con esa misma IP?
-  * ¿Puedes hacer `Test-NetConnection` (aka. *ping*) a tu máquina anfitriona?. Muestra una captura. ¿Qué IP usarás para comprobarlo?.
+  * ¿Podemos tener varias máquinas *arrancadas* en la RED con esa misma IP?
+  * ¿Puedes hacer `Test-NetConnection` (aka. *ping*) a tu máquina?. Muestra una captura. ¿Qué IP usarás para comprobarlo?.
+  * ¿Puedes hacer `Test-NetConnection` (aka. *ping*) a tu móvil si está conectado a la misma Red?. Muestra una captura.
+  * ¿Qué es es *DHCP*? ¿Qué nos afecta en nuestras máquinas?
+  * ¿Qué es una IP estática?
 
 \newpage
 ## Ejercicio 2
 
 ### Modo
 
-Estableciendo la conexión a **Adaptador Puente**
-
-### Comandos y Comprobaciones
-
-* Obtener en formato Lista :
-  * IP del Adaptador.
-  * IP de la Puerta de Enlace
-  * IP del Servidor/es DNS
-  * Tiempo de la concesión DHCP.
-
-### Preguntas asociadas
-
-  * ¿Podemos tener varias máquinas *arrancadas* en VirtualBox con esa misma IP?
-  * ¿Puedes hacer `Test-NetConnection` (aka. *ping*) a tu máquina anfitriona?. Muestra una Captura. ¿Qué IP usarás para comprobarlo?.
-  * ¿Puedes hacer `Test-NetConnection` (aka. *ping*) a tu Router de Casa?.Muestra una Captura. ¿Cómo has obtenido esa IP usarás para comprobarlo?.
-
-\newpage
-## Ejercicio 3
-
-### Modo
-
-Estableciendo la conexión a **NAT** , realizar una conexión con Traza de la Ruta hasta `youtube.es` y mostrar:
+Realizar una conexión con Traza de la Ruta hasta `youtube.es` y mostrar:
 
 ### Comandos y Comprobaciones
 
