@@ -6,7 +6,7 @@ lang: es-ES
 keywords: [SMX]
 ---
 
-# Exámen: Red Básica en Windows
+# Examen: Red Básica en Windows
 
 Utilizando los conceptos que hemos visto en teoría ( y los comandos), realiza los siguientes ejercicios mediante el VirtualBox y una máquina virtual en Windows, cambiando la **configuración** de la RED de la MV. 
 
@@ -19,7 +19,7 @@ Sobre cada ejercicio se pide:
  * Comandos ejecutados para su objetivo.
  * Comentarios sobre lo hecho.
 
-El propósito de este *exámen* es saber si sabeis, si os copiais lo sabré y la nota os la podéis imaginar, tenéis todo el fin de semana y el lunes para hacerlo. Yo estaré en clase el viernes de 11 a 12 para dudas, así como el lunes de 12 a 13. El exámen es largo y tiene mucho texto, pero si os lo tomáis con calma veréis que es mucho más sencillo de lo que parece.
+El propósito de este *examen* es saber si sabeis, si os copiais lo sabré y la nota os la podéis imaginar, tenéis todo el fin de semana y el lunes para hacerlo. Yo estaré en clase el viernes de 11 a 12 para dudas, así como el lunes de 12 a 13. El examen es largo y tiene mucho texto, pero si os lo tomáis con calma veréis que es mucho más sencillo de lo que parece.
 
 No se puede aprobar el tercer trimestre sin superar este tipo de ejercicios. Saber qué IP tengo, por qué tarjeta estoy conectándome al exterior y cuál es mi puerta de enlace y DNS son parámetros básicos para resolver cualquier incidencia. 
 
