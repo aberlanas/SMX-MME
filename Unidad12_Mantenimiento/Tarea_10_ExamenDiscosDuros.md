@@ -6,7 +6,9 @@ lang: es-ES
 keywords: [SMX, MME]
 ---
 
-# Particionando desde la línea de comandos
+# Examen Final 
+
+*Disponéis de 2 horas para la realización del examen.*
 
 Para la realización de este último exámen vamos a realizar una serie de operaciones que nos permitirán 
 la puesta en marcha y utilización de discos duros dentro de un S.O.
@@ -88,6 +90,8 @@ Particionaremos los discos *mediante comandos* de de la siguiente manera:
 | Disco2 Particion2 | 1GB    | ntfs | X: |
 | Disco2 Particion3 | 1GB    | ntfs | Z: |
 
+[ 4sysops - Comandos Útiles ](https://4sysops.com/archives/managing-disks-with-powershell/)
+
 ### Entrega:
 
  * Para cada partición, mostrar una captura con la ejecución de los comandos para realizarlo.
@@ -104,6 +108,8 @@ Modifica las particiones del ejercicio 2 (Windows) para que se monten en la sigu
  * `C:\Tercius\Datos2`
  * `C:\Tercius\Datos3`
 
+A continuación se muestran una serie de capturas donde se comprueba que tanto las rutas como las unidades han  sido montadas de manera correcta.
+
 ![Administrador de discos](imgs/ExamenWindowsDiscosDuros.png)
 \
 
@@ -113,11 +119,12 @@ Modifica las particiones del ejercicio 2 (Windows) para que se monten en la sigu
 ![Administrador de discos](imgs/ExamenWindowsDiscosDuros3.png)
 \
 
+### Entrega:
 
+ * Muestra una captura del Administrador de Discos donde se muestren las diferentes particiones, tal y como se ha mostrado en el ejemplo.
+ * Una vez finalizado todo, una captura del Explorador de archivos mostrando las diferentes unidades.
 
-
-
-
+\newpage
 ## Ejercicios 02 y 03 - Alternativos : Windows - 6 Puntos
 
 En previsión de que no funcione una MV con Windows, esta parte del examen se puede realizar utilizando una memoria USB externa.
@@ -128,14 +135,14 @@ Conectar un USB y realizar un particionado de la siguiente manera:
 
 | Disco - Partición | Tamaño | Tipo | Letra de acceso |
 |-------------------|--------|------|------------------|
-| Particion1 | 20% Total    | ntfs | S: |
-| Particion2 | 20% Total    | fat  | M: |
+| Particion1 | 20% Total    | ntfs | A: |
+| Particion2 | 20% Total    | fat  | L: |
 | Particion3 | 10% Total    | fat32 | T: |
-| Particion4 | 20% Total    | ntfs | X: |
-| Particion5 | 30% Total    | ntfs | Z: |
+| Particion4 | 20% Total    | ntfs | E: |
+| Particion5 | 30% Total    | ntfs | R: |
 
 
-### Entrega:
+### Entrega (1/2):
 
  * Para cada partición, mostrar una captura con la ejecución de los comandos para realizarlo.
  * Una vez finalizado todo, una captura del Explorador de archivos mostrando las diferentes unidades.
@@ -162,7 +169,7 @@ Modifica las particiones del ejercicio 2 (Windows) para que se monten en la sigu
 \
 
 
-### Entrega:
+### Entrega (2/2):
 
  * Muestra una captura del Administrador de Discos donde se muestren las diferentes particiones.
  * Una vez finalizado todo, una captura del Explorador de archivos mostrando las diferentes unidades.

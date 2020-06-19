@@ -40,7 +40,7 @@ UD12_NAME="Unidad12_Mantenimiento"
 UD13_NAME="Unidad13_Tecnicas"
 UD14_NAME="Unidad14_Particiones"
 UD15_NAME="Unidad15_UtilidadesBackups"
-
+REC_3EVA="Recuperacion_3EVA"
 #
 ## Unidades
 #
@@ -291,6 +291,16 @@ make_UD15(){
 }
 
 
+make_Rec3(){
+    cd ${REC_3EVA}
+    echo " * Recuperando 3 Eva"
+    #make_teoria ${REC_3EVA}
+    make_practicas ${REC_3EVA}
+    cd ..
+
+    move_pdfs ${REC_3EVA}
+}
+
 #
 # MAIN
 
@@ -302,10 +312,10 @@ case $1 in
         make_UD01     
 		;;
     "02")
-	    make_UD02
+	make_UD02
 	    ;;
     "03")
-		make_UD03
+	make_UD03
 		;;
     "04")
         make_UD04
@@ -343,6 +353,9 @@ case $1 in
     "15")
         make_UD15
 	;;
+    "Rec3")
+        make_Rec3
+    ;;
     "all")
         make_UD01
         make_UD02
