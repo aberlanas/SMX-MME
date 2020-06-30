@@ -1,6 +1,0 @@
-#+TITLE: UD 00 - Ejemplo
-#+AUTHOR: Angel Berlanas
-#+EMAIL: berlanas_ang@gva.es
-#+LANGUAGE: es
-#+latex_header: \hypersetup{colorlinks=true,linkcolor=black}
-
