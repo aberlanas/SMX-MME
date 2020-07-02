@@ -1,0 +1,49 @@
+#+TITLE: UD09 - Ennsamblado de Ordenadores
+#+AUTHOR: Angel Berlanas
+#+latex_header: \hypersetup{colorlinks=true,linkcolor=black}
+
+* Montaje de un equipo
+
+ Veamos los pasos de montaje de un equipo informático, en este caso se muestra
+ el montaje de un equipo configurado para un PC Gamer, que ya es de hace algún
+ tiempo. Sin embargo las categorías de componentes siguen siendo las mismas. 
+
+ Realiza las siguientes actividades en un PDF cuyo nombre sea:
+
+ ~NombreAlumn@SinEspacios_Ensamblado.pdf~
+
+* Tarea 01
+  
+  En el primer vídeo aparecen una serie de componentes, busca en PCComponentes
+  un /recambio/ para todos ellos y elabora un presupuesto.
+
+* Tarea 02
+
+  Realiza un presupuesto que contenga los mismos componentes pero lo más baratos
+  posibles.
+
+* Tarea 03
+
+  Enumera el orden de las piezas tal y como van siendo ensambladas. Si se
+  realiza manipulación de algo anótalo. 
+
+* Tarea 04
+
+  ¿Qué componentes te resultan más delicados?¿Crees que podrías ensamblar algo
+  ya mismo?
+
+
+* Tarea 05
+
+  Lee el siguiente artículo: [[https://www.tomshardware.com/reviews/motherboard-buying-guide,5682.html][Tom's Hardware - Best Motherboard - 2020]]
+  
+  Contesta a las siguientes preguntas
+
+  - ¿Qué motivos nos desaconsejan para adquirir una placa base de <100€?
+  - ¿Qué pieza es un /Heatsink/?
+  - ¿Qué hace más sencillo AMD respecto a Intel en lo referente a los sockets?
+  - ¿Qué tamaños de placa aparecen listados en el artículo?
+  - ¿Qué es un Thunderbolt?
+  - ¿Qué nos debe hacer decididir si necesitamos más o menos PCI-Lanes?
+  - ¿Qué es un DAC?
+  - ¿Para qué sirven los /LED diagnostic readouts/?

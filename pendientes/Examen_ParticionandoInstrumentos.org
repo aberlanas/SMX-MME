@@ -1,0 +1,181 @@
+#+TITLE: UD 07 - Exámen
+#+AUTHOR: Angel Berlanas
+#+EMAIL: berlanas_ang@gva.es
+#+LANGUAGE: es
+#+latex_header: \hypersetup{colorlinks=true,linkcolor=black}
+
+* Instrucciones
+  
+   - Leer /todo/ el exámen hasta el final antes de comenzar a realizar las
+     acciones.
+   - Vais a necesitar la ISO de Xubuntu 19.10 que tenéis disponible en el
+     Servidor del aula : /172.29.0.254/.
+   - No se aceptará otro Sistema Operativo.
+   - La instalación ha de ser nueva, *no podéis* utilizar las antiguas.
+   - Mientras se instala podéis ir preparando los comandos y el documento que
+     entregaréis al final del exámen.
+   - /¡MUCHA SUERTE A TOD@S!/.
+
+* Descripición  
+
+  La empresa /Soluciones Eficaces Altamente Inestables/ nos acaba de contratar,
+  un nuevo cliente les ha pedido una maqueta de Sistema Operativo para un
+  estudio de grabación un tanto especial, donde acuden /Youtubers/ ,
+  /Compositores/ y /Músicos/ de todas las épocas a trabajar (he dicho que era
+  /un tanto especial/).
+
+  Debemos preparar un SO con las necesidades cubiertas para que ellos puedan
+  probar que nuestra solución les sirve, si les sirve, nos contratarán y
+  ganaremos un sueldo /Nescafé/ para toda la vida.
+
+  Además de la instalación, debemos prepararles un pequeño resumen de los
+  diferentes Discos Duros y de las características que tienen los sistemas de
+  ficheros FAT32 que los hacen "/tan especiales/".
+
+* Instalación
+
+  Debemos instalar una MV con Xubuntu con las siguientes características:
+
+  - 2 CPUs.
+  - 2 GB de RAM.
+  - 1 Disco Duro de 10GB dinámico.
+  - 1 Tarjeta de red en modo *puente*.
+  - En el 
+  
+  Una vez instalada, instalar el comando ~tree~ que nos hará falta para la
+  entrega, mediante la orden:
+
+  ~sudo apt install tree~
+
+ 
+* Usuarios
+
+  *Nota: Hasta 3 puntos*
+
+  Los usuarios que /finalmente/ han de estar configurados en el equipo son los
+  siguientes (y *solo* los siguientes), se adjunta tabla con las diferentes
+  caracterísitcas el usuario:
+
+  | Usuario    | Login      | Password    | Administrador | Carpeta Personal                 |
+  |------------+------------+-------------+---------------+----------------------------------|
+  | Armonia    | armonia    | 4rm0n14     | Si            | /home/armonia                    |
+  | Jaime      | jaltozano  | Y0utub3     | No            | /youtubers/altozano              |
+  | Luis Angel | debenito   | S1gn1f1c4d0 | Si            | /musicos/analisis/debenito       |
+  | Anton      | bruckner   | 0rg4n1st4   | No            | /musicos/compositores/bruckner   |
+  | Igor       | stravinsky | F1r3b1rd    | No            | /musicos/compositores/stravinsky |
+  | Philip     | glass      | M1n1m4l1st4 | Si            | /musicos/pianistas/glass         |
+  | Toshiko    | akiyoshi   | J4p4nJ4zz   | No            | /musicos/pianistas/akiyoshi      |
+  
+  Además existen una serie de grupos /adicionales/ cuyos integrantes son los
+  siguientes:
+
+  | Usuario/ Grupos | analistas | compositores | musicos | youtubers |
+  |-----------------+-----------+--------------+---------+-----------|
+  | Armonia         | x         | x            | x       | x         |
+  | Jaime           | x         |              |         | x         |
+  | Luis Angel      | x         |              | x       |           |
+  | Anton           |           | x            | x       |           |
+  | Igor            |           | x            |         |           |
+  | Philip          |           | x            | x       |           |
+  | Toshiko         |           | x            | x       |           |
+  |-----------------+-----------+--------------+---------+-----------|
+
+  Estos grupos se utilizarán para otorgarles permisos de escritura y lectura a
+  diferentes carpetas que se encontrarán en diferentes particiones tal y como se
+  muestra en el siguiente apartado.
+
+* Discos Duros y Puntos de Montaje
+
+  *Nota: Hasta 3 puntos*
+
+  Se añadirán a la máquina virtual los siguientes discos:
+
+  | Disco          | Tamaño | Dispositvo |
+  |----------------+--------+------------|
+  | Musicos.vdi    | 6GB    | /dev/sdb   |
+  | Youtubers.vdi  | 2GB    | /dev/sdc   |
+  | Compartido.vdi | 2GB    | /dev/sdd   |
+ 
+  Una vez añadidos se crearán las siguientes particiones y se establecerán los
+  siguientes puntos de montaje:
+
+  | Partición | Tamaño | Sistema de Ficheros | Punto de Montaje      |
+  |-----------+--------+---------------------+-----------------------|
+  | /dev/sdb1 | 1GB    | ext3                | /musicos/analisis     |
+  | /dev/sdb2 | 2GB    | ext4                | /musicos/compositores |
+  | /dev/sdb3 | 3GB    | ext4                | /musicos/pianistas    |
+  | /dev/sdc1 | 2GB    | btrfs               | /youtubers            |
+  | /dev/sdd1 | 2GB    | ext4                | /compartido           |
+
+* Permisos de compartido.
+
+  *Nota: Hasta 2 puntos*
+
+  En la carpeta ~compartido~ debe haber una carpeta por cada uno de los /grupos
+  adicionales/ y debemos permitir a los usuarios pertenecientes a dichos grupos
+  escribir y leer dentro, impidiendo /cualquier otro acceso/ a los usuarios que
+  *no sean* de ese grupo, excepto al usuario /armonia/ que debe poder realizar
+  cualquier acción en *todos* los ficheros y carpetas de ~compartido~.
+
+* Pruebas 
+
+  *Nota: Hasta 2 puntos*
+
+  Se deben realizar las siguientes comprobaciones:
+
+  - Todos los usuarios pueden iniciar sesión gráfica.
+  - Todos los usuarios tienen el ~$HOME~ bien establecido.
+  - Los permisos son los correctos.
+  - Los puntos de montaje son los correctos y se montan en el arranque.
+  - Mediante el uso de los comando ~touch~ y ~cat~ ir pasando por todos los usuarios y
+    realizando pruebas de creación y lectura de permisos en los diferentes
+    ficheros y carpetas de ~compartido~.
+  
+
+* Petición especial
+
+  *Nota: Hasta 2 puntos*
+
+  La tarea de formatear discos es algo muy importante y que debemos realizar con
+  muchísima atención, sin embargo muchas veces veremos que resulta una tarea
+  tediosa si lo tenemos que hacer en centenares de discos la misma
+  operación. 
+
+  Hemos consultado con el /Oráculo/ y nos ha dicho que existe /al menos 1/
+  script que formatea las particiones de un dispositivo dado.
+
+  El /script/ es este:
+
+  #+BEGIN_SRC bash
+
+#!/bin/bash
+(
+echo o # Create a new empty DOS partition table
+echo n # Add a new partition
+echo p # Primary partition
+echo 1 # Partition number
+echo   # First sector (Accept default: 1)
+echo   # Last sector (Accept default: varies)
+echo w # Write changes
+) | sudo fdisk /dev/sdX
+
+exit 0
+  #+END_SRC
+
+  Se piden dos tareas:
+
+  - Explicar /qué hace/ este script, es decir /cómo funciona/.
+  - Modificarlo para que adapte a tus necesidades en el formateo del disco : /Compartido.vdi/.
+
+
+* Entrega
+
+  Debéis presentar en un documento PDF los siguientes /items/.
+
+  * El contenido del fichero ~/etc/fstab~ de la MV.
+  * La salida del comando ~mount~ en la MV.
+  * La salida del comando ~cat /etc/passwd~ en la MV.
+  * La salida del comando ~tree -pugf /compartido~ en la MV.
+  * Una captura de la sesión de /cada uno de los usuarios/ donde se muestre que
+    la carpeta personal es la que está establecida en la /tabla/ del exámen y no
+    ~/home/usuario~ (excepto para el usuario ~armonia~). 
